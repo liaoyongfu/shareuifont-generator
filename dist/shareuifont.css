@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "shareuifont";
+	src: url("shareuifont.eot?535909f08404e56863ea8ff71e03c124?#iefix") format("embedded-opentype"),
+url("shareuifont.woff2?535909f08404e56863ea8ff71e03c124") format("woff2"),
+url("shareuifont.woff?535909f08404e56863ea8ff71e03c124") format("woff");
+}
+
+.si {
+	line-height: 1;
+}
+
+.si:before {
+	font-family: shareuifont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.si-com_信用厦门_android:before {
+	content: "\f101";
+}
+.si-com_湖里就业_angle-up:before {
+	content: "\f102";
+}
+.si-com_集美综合项目_apple:before {
+	content: "\f103";
+}

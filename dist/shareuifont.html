@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shareuifont</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+		.preview {
+			line-height: 2em;
+		}
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+		.si {
+			display: inline-block;
+			font-size: 32px;
+		}
+		@font-face {
+	font-family: "shareuifont";
+	src: url("shareuifont.eot?293fd6fd156d66ffc4d3937e64d9429a?#iefix") format("embedded-opentype"),
+url("shareuifont.woff2?293fd6fd156d66ffc4d3937e64d9429a") format("woff2"),
+url("shareuifont.woff?293fd6fd156d66ffc4d3937e64d9429a") format("woff");
+}
+
+.si {
+	line-height: 1;
+}
+
+.si:before {
+	font-family: shareuifont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.si-com_信用厦门_android:before {
+	content: "\f101";
+}
+.si-com_湖里就业_angle-up:before {
+	content: "\f102";
+}
+.si-com_集美综合项目_apple:before {
+	content: "\f103";
+}
+
+	</style>
+</head>
+<body>
+	<h1>shareuifont</h1>
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">图标</th>
+      <th scope="col">中文名称</th>
+      <th scope="col">英文名称</th>
+      <th scope="col">codepoint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><i class="si si-com_信用厦门_android"></i></td>
+      <td>信用厦门</td>
+      <td>com_android</td>
+      <td>
+        <input type="text" value=""/>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="si si-com_湖里就业_angle-up"></i></td>
+      <td>湖里就业</td>
+      <td>com_angle-up</td>
+      <td>
+        <input type="text" value=""/>
+      </td>
+    </tr>
+    <tr>
+      <td><i class="si si-com_集美综合项目_apple"></i></td>
+      <td>集美综合项目</td>
+      <td>com_apple</td>
+      <td>
+        <input type="text" value=""/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
