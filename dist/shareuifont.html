@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>shareuifont</title>
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<style>
 		body {
 			font-family: sans-serif;
 			margin: 0;
-			padding: 10px 20px;
+			padding: 40px 20px 10px;
 		}
+
+		h1, h2{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
 		.preview {
 			line-height: 2em;
 		}
+
 		.preview__icon {
 			display: inline-block;
 			width: 32px;
 			text-align: center;
 		}
-		.si {
+
+		th, td{
+			text-align: center;
+			vertical-align: middle!important;
+		}
+
+		#top{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background: #fff;
+			padding: 20px;
+		}
+
+		#content{
+			margin-top: 95px;
+		}
+
+		.alert {
+			display: none;
+			position: fixed;
+			top: 30px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.search{
+			border-color: navy;
+    	color: navy;
+		}
+
+		.codepoint {
+			border: none;
+			background: transparent;
+		}
+
+			.si
+
+			{
 			display: inline-block;
 			font-size: 32px;
 		}
-		@font-face {
+
+			@font-face {
 	font-family: "shareuifont";
-	src: url("shareuifont.eot?293fd6fd156d66ffc4d3937e64d9429a?#iefix") format("embedded-opentype"),
-url("shareuifont.woff2?293fd6fd156d66ffc4d3937e64d9429a") format("woff2"),
-url("shareuifont.woff?293fd6fd156d66ffc4d3937e64d9429a") format("woff");
+	src: url("shareuifont.eot?91f385d8b49d24c12e138c2c0b387234?#iefix") format("embedded-opentype"),
+url("shareuifont.woff2?91f385d8b49d24c12e138c2c0b387234") format("woff2"),
+url("shareuifont.woff?91f385d8b49d24c12e138c2c0b387234") format("woff");
 }
 
 .si {
@@ -40,55 +88,135 @@ url("shareuifont.woff?293fd6fd156d66ffc4d3937e64d9429a") format("woff");
 	vertical-align: top;
 }
 
-.si-com_信用厦门_android:before {
+.si-app_apple:before {
 	content: "\f101";
 }
-.si-com_湖里就业_angle-up:before {
+.si-com_android:before {
 	content: "\f102";
 }
-.si-com_集美综合项目_apple:before {
+.si-com_angle-up:before {
 	content: "\f103";
 }
 
 	</style>
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
+
 <body>
-	<h1>shareuifont</h1>
-  <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">图标</th>
-      <th scope="col">中文名称</th>
-      <th scope="col">英文名称</th>
-      <th scope="col">codepoint</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><i class="si si-com_信用厦门_android"></i></td>
-      <td>信用厦门</td>
-      <td>com_android</td>
-      <td>
-        <input type="text" value=""/>
-      </td>
-    </tr>
-    <tr>
-      <td><i class="si si-com_湖里就业_angle-up"></i></td>
-      <td>湖里就业</td>
-      <td>com_angle-up</td>
-      <td>
-        <input type="text" value=""/>
-      </td>
-    </tr>
-    <tr>
-      <td><i class="si si-com_集美综合项目_apple"></i></td>
-      <td>集美综合项目</td>
-      <td>com_apple</td>
-      <td>
-        <input type="text" value=""/>
-      </td>
-    </tr>
-  </tbody>
-</table>
+	<div id="top">
+		<h1>Shareui 字体图标列表</h1>
+		<div class="text-center">
+			<input type="text" class="search form-control" placeholder="输入类名/中文名称/codepoint查找"/>
+		</div>
+	</div>
+	<div id="content">
+	<h2>app</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-app_apple"></i>
+				</td>
+				<td>si si-app_apple</td>
+				<td>集美综合项目</td>
+				<td>
+					<input class="codepoint" type="text" value="\f101" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_android"></i>
+				</td>
+				<td>si si-com_android</td>
+				<td>信用厦门</td>
+				<td>
+					<input class="codepoint" type="text" value="\f102" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_angle-up"></i>
+				</td>
+				<td>si si-com_angle-up</td>
+				<td>湖里就业</td>
+				<td>
+					<input class="codepoint" type="text" value="\f103" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="alert alert-success" role="alert">
+		复制成功！
+	</div>
+
+	<script>
+		$(function () {
+			$('.copy').on('click', function (e) {
+				e.preventDefault();
+				var $codepoint = $(this).parent().prev().children();
+				$codepoint.select();
+				document.execCommand('copy', true);
+				$('.alert').show();
+				setTimeout(function () {
+					$('.alert').hide();
+				}, 2000);
+			});
+
+			$('.search').on('input porpertychange', function(e){
+				var value = $(this).val();
+				$('tr').each(function () {
+					if ($(this).find('td').length > 0) {
+						var math = false;
+						$(this).find('td').each(function () {
+							if ($(this).html().indexOf(value) !== -1) {
+								math = true;
+								return false;
+							}
+						});
+
+						if (math) {
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+					}
+				});
+			});
+		})
+	</script>
 </body>
+
 </html>
