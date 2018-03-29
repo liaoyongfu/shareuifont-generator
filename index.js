@@ -4,6 +4,7 @@ const rimraf = require('rimraf');
 const fs = require('fs');
 const handlebars = require('handlebars');
 const _ = require("lodash");
+const packagejson = require("./package.json");
 
 const distPath = 'dist/';
 const srcPath = 'src/';
@@ -13,13 +14,21 @@ function templateHelpers() {
     return selector.replace(/\./, '');
   });
   handlebars.registerHelper('getCh', function(string){
-    return string.replace(/[^\u4e00-\u9fa5]/gi,"");
+    // return string.replace(/[^\u4e00-\u9fa5]/gi,"");
+    var arr = string.split('_');
+    return arr[1];
   });
   handlebars.registerHelper('removeCh', function(string){
-    return string.replace(/[\u4e00-\u9fa5]+_/gi,"");
+    // return string.replace(/[\u4e00-\u9fa5]+_/gi,"");
+    var arr = string.split('_');
+    return arr.slice(0, 1).concat(arr.slice(2)).join('_');
   });
   handlebars.registerHelper('getCodepoint', function(name, codepoints){
     return '\\' + (codepoints[name] || '');
+  });
+  handlebars.registerHelper('getConent', function(name, codepoints){
+    if(!codepoints[name]) return '';
+    return ('\&#x' + (codepoints[name]) + ';').toString();
   });
 }
 
@@ -62,7 +71,8 @@ function generatorFont(files) {
       templateOptions: {
         classPrefix: 'si-',
         baseSelector: '.si',
-        types: getTypes(fs.readdirSync(srcPath).map(file => file.split('.')[0]))
+        types: getTypes(fs.readdirSync(srcPath).map(file => file.split('.')[0])),
+        version: packagejson.version
       },
       htmlTemplate: "templates/html.hbs",
       cssTemplate: "templates/css.hbs"

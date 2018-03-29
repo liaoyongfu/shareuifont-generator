@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>shareuifont</title>
-	<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet" />
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<style>
 		body {
 			font-family: sans-serif;
@@ -24,6 +24,8 @@
 
 		.row span {
 			margin-right: 10px;
+			display: inline-block;
+			vertical-align: middle;
 		}
 
 		.preview {
@@ -63,14 +65,23 @@
 
 		.fa-hover {
 			white-space: nowrap;
+			border-radius: 4px;
 		}
 
 		.fontawesome-icon-list {
 			font-size: 12px;
 		}
 
+		.fontawesome-icon-list input{
+			font-family: shareuifont !important;
+		}
+
 		.fontawesome-icon-list .si {
 			font-size: 20px;
+		}
+		.fa-hover:hover{
+			    background-color: #1d9d74;
+    			color: #ffffff;
 		}
 
 		.alert {
@@ -102,11 +113,12 @@
 			font-size: 32px;
 		}
 
-			@font-face {
+			/*! version：3.0.5 */
+@font-face {
 	font-family: "shareuifont";
-	src: url("shareuifont.eot?57516d714ce4c3841339e046e4a54eec?#iefix") format("embedded-opentype"),
-url("shareuifont.woff2?57516d714ce4c3841339e046e4a54eec") format("woff2"),
-url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
+	src: url("shareuifont.eot?f195cc8eb3a3b1c4133b366c05e15270?#iefix") format("embedded-opentype"),
+url("shareuifont.woff2?f195cc8eb3a3b1c4133b366c05e15270") format("woff2"),
+url("shareuifont.woff?f195cc8eb3a3b1c4133b366c05e15270") format("woff");
 }
 
 .si {
@@ -183,7 +195,7 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 .si-app_jcfx:before {
 	content: "\f115";
 }
-.si-app_办公OA_bgoa:before {
+.si-app_bgoa:before {
 	content: "\f116";
 }
 .si-app_csbj:before {
@@ -306,7 +318,7 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 .si-app_sqzm:before {
 	content: "\f13e";
 }
-.si-app_系统管理2_xtgl2:before {
+.si-app_xtgl2:before {
 	content: "\f13f";
 }
 .si-app_xtgl:before {
@@ -339,7 +351,7 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 .si-app_jsyw:before {
 	content: "\f149";
 }
-.si-app_认证2_rz2:before {
+.si-app_rz2:before {
 	content: "\f14a";
 }
 .si-app_rz:before {
@@ -369,7 +381,7 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 .si-app_mjgl:before {
 	content: "\f153";
 }
-.si-app_门禁管理（民警）_mjglmj:before {
+.si-app_mjglmj:before {
 	content: "\f154";
 }
 .si-app_wtzg:before {
@@ -381,372 +393,373 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 .si-app_gxgl:before {
 	content: "\f157";
 }
-.si-com_addto_addto:before {
+.si-com_addto:before {
 	content: "\f158";
 }
-.si-com_android_android:before {
+.si-com_android:before {
 	content: "\f159";
 }
-.si-com_apple_apple:before {
+.si-com_apple:before {
 	content: "\f15a";
 }
-.si-com_appsquareo_appsquareo:before {
+.si-com_appsquareo:before {
 	content: "\f15b";
 }
-.si-com_appsquare_appsquare:before {
+.si-com_appsquare:before {
 	content: "\f15c";
 }
-.si-com_arrowcircleodown_arrowcircleodown:before {
+.si-com_arrowcircleodown:before {
 	content: "\f15d";
 }
-.si-com_arrowscircleoup_arrowscircleoup:before {
+.si-com_arrowscircleoup:before {
 	content: "\f15e";
 }
-.si-com_bigcircleo_bigcircleo:before {
+.si-com_bigcircleo:before {
 	content: "\f15f";
 }
-.si-com_calendar_calendar:before {
+.si-com_calendar:before {
 	content: "\f160";
 }
-.si-com_catalog2_catalog2:before {
+.si-com_catalog2:before {
 	content: "\f161";
 }
-.si-com_chartarea_chartarea:before {
+.si-com_chartarea:before {
 	content: "\f162";
 }
-.si-com_chartbar_chartbar:before {
+.si-com_chartbar:before {
 	content: "\f163";
 }
-.si-com_chartline_chartline:before {
+.si-com_chartline:before {
 	content: "\f164";
 }
-.si-com_chartpie_chartpie:before {
+.si-com_chartpie:before {
 	content: "\f165";
 }
-.si-com_chrome_chrome:before {
+.si-com_chrome:before {
 	content: "\f166";
 }
-.si-com_circleo_circleo:before {
+.si-com_circleo:before {
 	content: "\f167";
 }
-.si-com_circle_circle:before {
+.si-com_circle:before {
 	content: "\f168";
 }
-.si-com_clock_clock-07:before {
+.si-com_clock-07:before {
 	content: "\f169";
 }
-.si-com_clock_clock-120:before {
+.si-com_clock-120:before {
 	content: "\f16a";
 }
-.si-com_collection_collection:before {
+.si-com_collection:before {
 	content: "\f16b";
 }
-.si-com_copy2_copy2:before {
+.si-com_copy2:before {
 	content: "\f16c";
 }
-.si-com_correct_correct-08:before {
+.si-com_correct-08:before {
 	content: "\f16d";
 }
-.si-com_correct_correct-73:before {
+.si-com_correct-73:before {
 	content: "\f16e";
 }
-.si-com_currentitem2_currentitem2:before {
+.si-com_currentitem2:before {
 	content: "\f16f";
 }
-.si-com_currentitem_currentitem:before {
+.si-com_currentitem:before {
 	content: "\f170";
 }
-.si-com_damage_damage:before {
+.si-com_damage:before {
 	content: "\f171";
 }
-.si-com_delete_delete:before {
+.si-com_delete:before {
 	content: "\f172";
 }
-.si-com_display_display:before {
+.si-com_display:before {
 	content: "\f173";
 }
-.si-com_dotcircle_dotcircle:before {
+.si-com_dotcircle:before {
 	content: "\f174";
 }
-.si-com_doubt_doubt:before {
+.si-com_doubt:before {
 	content: "\f175";
 }
-.si-com_edit_edit:before {
+.si-com_edit:before {
 	content: "\f176";
 }
-.si-com_ellipsiscircle_ellipsiscircle:before {
+.si-com_ellipsiscircle:before {
 	content: "\f177";
 }
-.si-com_enlarge_enlarge:before {
+.si-com_enlarge:before {
 	content: "\f178";
 }
-.si-com_error_error-09:before {
+.si-com_error-09:before {
 	content: "\f179";
 }
-.si-com_error_error-49:before {
+.si-com_error-49:before {
 	content: "\f17a";
 }
-.si-com_export_export:before {
+.si-com_export:before {
 	content: "\f17b";
 }
-.si-com_fileo_fileo:before {
+.si-com_fileo:before {
 	content: "\f17c";
 }
-.si-com_filepictureo_filepictureo:before {
+.si-com_filepictureo:before {
 	content: "\f17d";
 }
-.si-com_filepicture_filepicture:before {
+.si-com_filepicture:before {
 	content: "\f17e";
 }
-.si-com_filetexto_filetexto:before {
+.si-com_filetexto:before {
 	content: "\f17f";
 }
-.si-com_filetext_filetext:before {
+.si-com_filetext:before {
 	content: "\f180";
 }
-.si-com_file_file:before {
+.si-com_file:before {
 	content: "\f181";
 }
-.si-com_flag_flag:before {
+.si-com_flag:before {
 	content: "\f182";
 }
-.si-com_folderopeno_folderopeno:before {
+.si-com_folderopeno:before {
 	content: "\f183";
 }
-.si-com_folderopen_folderopen:before {
+.si-com_folderopen:before {
 	content: "\f184";
 }
-.si-com_foldero_foldero:before {
+.si-com_foldero:before {
 	content: "\f185";
 }
-.si-com_folder_folder:before {
+.si-com_folder:before {
 	content: "\f186";
 }
-.si-com_folding_folding:before {
+.si-com_folding:before {
 	content: "\f187";
 }
-.si-com_github_github:before {
+.si-com_github:before {
 	content: "\f188";
 }
-.si-com_gitlab_gitlab:before {
+.si-com_gitlab:before {
 	content: "\f189";
 }
-.si-com_heart _heart :before {
+.si-com_heart :before {
 	content: "\f18a";
 }
-.si-com_hearto_hearto:before {
+.si-com_hearto:before {
 	content: "\f18b";
 }
-.si-com_help_help:before {
+.si-com_help:before {
 	content: "\f18c";
 }
-.si-com_home:before {
+.si-com:before {
 	content: "\f18d";
 }
-.si-com_homeo_homeo:before {
+.si-com_homeo:before {
 	content: "\f18e";
 }
-.si-com_home_home:before {
+.si-com_home:before {
 	content: "\f18f";
 }
-.si-com_html5:before {
+.si-com:before {
 	content: "\f190";
 }
-.si-com_image_image:before {
+.si-com_image:before {
 	content: "\f191";
 }
-.si-com_increase_increase:before {
+.si-com_increase:before {
 	content: "\f192";
 }
-.si-com_institution:before {
+.si-com:before {
 	content: "\f193";
 }
-.si-com_label_label:before {
+.si-com_label:before {
 	content: "\f194";
 }
-.si-com_leftsign_leftsign:before {
+.si-com_leftsign:before {
 	content: "\f195";
 }
-.si-com_left_left:before {
+.si-com_left:before {
 	content: "\f196";
 }
-.si-com_link2_link2:before {
+.si-com_link2:before {
 	content: "\f197";
 }
-.si-com_link_link:before {
+.si-com_link:before {
 	content: "\f198";
 }
-.si-com_listsquareo_listsquareo:before {
+.si-com_listsquareo:before {
 	content: "\f199";
 }
-.si-com_load_load:before {
+.si-com_load:before {
 	content: "\f19a";
 }
-.si-com_location_location:before {
+.si-com_location:before {
 	content: "\f19b";
 }
-.si-com_lock_lock:before {
+.si-com_lock:before {
 	content: "\f19c";
 }
-.si-com_loop_loop:before {
+.si-com_loop:before {
 	content: "\f19d";
 }
-.si-com_lower_lower-20:before {
+.si-com_lower-20:before {
 	content: "\f19e";
 }
-.si-com_lower_lower-64:before {
+.si-com_lower-64:before {
 	content: "\f19f";
 }
-.si-com_magnifier_magnifier:before {
+.si-com_magnifier:before {
 	content: "\f1a0";
 }
-.si-com_mail_mail:before {
+.si-com_mail:before {
 	content: "\f1a1";
 }
-.si-com_maplocation2_maplocation2:before {
+.si-com_maplocation2:before {
 	content: "\f1a2";
 }
-.si-com_maplocation_maplocation:before {
+.si-com_maplocation:before {
 	content: "\f1a3";
 }
-.si-com_minuscircle_minus-circle:before {
+.si-com_minus-circle:before {
 	content: "\f1a4";
 }
-.si-com_more_more:before {
+.si-com_more:before {
 	content: "\f1a5";
 }
-.si-com_narrow_narrow:before {
+.si-com_narrow:before {
 	content: "\f1a6";
 }
-.si-com_news_news:before {
+.si-com_news:before {
 	content: "\f1a7";
 }
-.si-com_noimageo_noimageo:before {
+.si-com_noimageo:before {
 	content: "\f1a8";
 }
-.si-com_notebook_notebook:before {
+.si-com_notebook:before {
 	content: "\f1a9";
 }
-.si-com_notice_notice:before {
+.si-com_notice:before {
 	content: "\f1aa";
 }
-.si-com_pen_pen:before {
+.si-com_pen:before {
 	content: "\f1ab";
 }
-.si-com_personnel_personnel:before {
+.si-com_personnel:before {
 	content: "\f1ac";
 }
-.si-com_photograph_photograph:before {
+.si-com_photograph:before {
 	content: "\f1ad";
 }
-.si-com_plus_plus:before {
+.si-com_plus:before {
 	content: "\f1ae";
 }
-.si-com_position_position:before {
+.si-com_position:before {
 	content: "\f1af";
 }
-.si-com_preservation_preservation:before {
+.si-com_preservation:before {
 	content: "\f1b0";
 }
-.si-com_print_print:before {
+.si-com_print:before {
 	content: "\f1b1";
 }
-.si-com_problem_problem:before {
+.si-com_problem:before {
 	content: "\f1b2";
 }
-.si-com_prompt_prompt:before {
+.si-com_prompt:before {
 	content: "\f1b3";
 }
-.si-com_qq_qq:before {
+.si-com_qq:before {
 	content: "\f1b4";
 }
-.si-com_reduce_reduce:before {
+.si-com_reduce:before {
 	content: "\f1b5";
 }
-.si-com_rightsign_rightsign:before {
+.si-com_rightsign:before {
 	content: "\f1b6";
 }
-.si-com_right_right:before {
+.si-com_right:before {
 	content: "\f1b7";
 }
-.si-com_rocket_rocket-118:before {
+.si-com_rocket-118:before {
 	content: "\f1b8";
 }
-.si-com_rocket_rocket-27:before {
+.si-com_rocket-27:before {
 	content: "\f1b9";
 }
-.si-com_rotate_rotate:before {
+.si-com_rotate:before {
 	content: "\f1ba";
 }
-.si-com_searchplus_searchplus:before {
+.si-com_searchplus:before {
 	content: "\f1bb";
 }
-.si-com_search_search:before {
+.si-com_search:before {
 	content: "\f1bc";
 }
-.si-com_see_see:before {
+.si-com_see:before {
 	content: "\f1bd";
 }
-.si-com_setup_setup:before {
+.si-com_setup:before {
 	content: "\f1be";
 }
-.si-com_shortmessage_shortmessage:before {
+.si-com_shortmessage:before {
 	content: "\f1bf";
 }
-.si-com_sitemap_sitemap:before {
+.si-com_sitemap:before {
 	content: "\f1c0";
 }
-.si-com_smallbell_smallbell:before {
+.si-com_smallbell:before {
 	content: "\f1c1";
 }
-.si-com_sortleft_sortleft:before {
+.si-com_sortleft:before {
 	content: "\f1c2";
 }
-.si-com_sortright_sortright:before {
+.si-com_sortright:before {
 	content: "\f1c3";
 }
-.si-com_star_star:before {
+.si-com_star:before {
 	content: "\f1c4";
 }
-.si-com_suspend_suspend:before {
+.si-com_suspend:before {
 	content: "\f1c5";
 }
-.si-com_task_task:before {
+.si-com_task:before {
 	content: "\f1c6";
 }
-.si-com_text_text:before {
+.si-com_text:before {
 	content: "\f1c7";
 }
-.si-com_upanddown_upanddown:before {
+.si-com_upanddown:before {
 	content: "\f1c8";
 }
-.si-com_upper_upper:before {
+.si-com_upper:before {
 	content: "\f1c9";
 }
-.si-com_up_up:before {
+.si-com_up:before {
 	content: "\f1ca";
 }
-.si-com_usero_usero:before {
+.si-com_usero:before {
 	content: "\f1cb";
 }
-.si-com_user_user:before {
+.si-com_user:before {
 	content: "\f1cc";
 }
-.si-com_wechat_wechat:before {
+.si-com_wechat:before {
 	content: "\f1cd";
 }
-.si-com_weibo_weibo:before {
+.si-com_weibo:before {
 	content: "\f1ce";
 }
-.si-com_zoomin_zoomin:before {
+.si-com_zoomin:before {
 	content: "\f1cf";
 }
-.si-com_zoomout_zoomout:before {
+.si-com_zoomout:before {
 	content: "\f1d0";
 }
 
 	</style>
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -759,2296 +772,1880 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 	<div id="content">
 		<h2 class="page-header">app</h2>
 		<div class="row fontawesome-icon-list">
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_ztyw"></i>
 				</span>
 				<span>si si-app_ztyw</span>
 				<span>专题业务</span>
 				<span class="codepoint">\f101</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf101;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_ywdh"></i>
 				</span>
 				<span>si si-app_ywdh</span>
 				<span>业务导航</span>
 				<span class="codepoint">\f102</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf102;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_ywh"></i>
 				</span>
 				<span>si si-app_ywh</span>
 				<span>业委会</span>
 				<span class="codepoint">\f103</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf103;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_lwhzb"></i>
 				</span>
 				<span>si si-app_lwhzb</span>
 				<span>两违汇总表</span>
 				<span class="codepoint">\f104</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf104;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_lwwgtjb"></i>
 				</span>
 				<span>si si-app_lwwgtjb</span>
 				<span>两违网格统计表</span>
 				<span class="codepoint">\f105</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf105;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_lwkhb"></i>
 				</span>
 				<span>si si-app_lwkhb</span>
 				<span>两违考核表</span>
 				<span class="codepoint">\f106</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf106;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_grzx"></i>
 				</span>
 				<span>si si-app_grzx</span>
 				<span>个人中心</span>
 				<span class="codepoint">\f107</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf107;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sjcl-09"></i>
 				</span>
 				<span>si si-app_sjcl-09</span>
 				<span>事件处理</span>
 				<span class="codepoint">\f108</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf108;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sjcl-34"></i>
 				</span>
 				<span>si si-app_sjcl-34</span>
 				<span>事件处理</span>
 				<span class="codepoint">\f109</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf109;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sjyj"></i>
 				</span>
 				<span>si si-app_sjyj</span>
 				<span>事件预警</span>
 				<span class="codepoint">\f10a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_hdgz"></i>
 				</span>
 				<span>si si-app_hdgz</span>
 				<span>互动共治</span>
 				<span class="codepoint">\f10b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rsyw"></i>
 				</span>
 				<span>si si-app_rsyw</span>
 				<span>人社业务</span>
 				<span class="codepoint">\f10c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rwzx"></i>
 				</span>
 				<span>si si-app_rwzx</span>
 				<span>任务中心</span>
 				<span class="codepoint">\f10d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_qygl"></i>
 				</span>
 				<span>si si-app_qygl</span>
 				<span>企业管理</span>
 				<span class="codepoint">\f10e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_qqxxgl"></i>
 				</span>
 				<span>si si-app_qqxxgl</span>
 				<span>侨情信息管理</span>
 				<span class="codepoint">\f10f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf10f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xxfb"></i>
 				</span>
 				<span>si si-app_xxfb</span>
 				<span>信息发布</span>
 				<span class="codepoint">\f110</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf110;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_dy"></i>
 				</span>
 				<span>si si-app_dy</span>
 				<span>党员</span>
 				<span class="codepoint">\f111</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf111;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_djyw"></i>
 				</span>
 				<span>si si-app_djyw</span>
 				<span>党建业务</span>
 				<span class="codepoint">\f112</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf112;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_ggaq"></i>
 				</span>
 				<span>si si-app_ggaq</span>
 				<span>公共安全</span>
 				<span class="codepoint">\f113</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf113;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_gayw"></i>
 				</span>
 				<span>si si-app_gayw</span>
 				<span>公安业务</span>
 				<span class="codepoint">\f114</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf114;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jcfx"></i>
 				</span>
 				<span>si si-app_jcfx</span>
 				<span>决策分析</span>
 				<span class="codepoint">\f115</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf115;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-app_办公OA_bgoa"></i>
+					<i class="si si-app_bgoa"></i>
 				</span>
-				<span>si si-app_办公OA_bgoa</span>
-				<span>办公</span>
+				<span>si si-app_bgoa</span>
+				<span>办公OA</span>
 				<span class="codepoint">\f116</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf116;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_csbj"></i>
 				</span>
 				<span>si si-app_csbj</span>
 				<span>城市部件</span>
 				<span class="codepoint">\f117</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf117;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jcsj"></i>
 				</span>
 				<span>si si-app_jcsj</span>
 				<span>基础数据</span>
 				<span class="codepoint">\f118</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf118;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jcsjkh"></i>
 				</span>
 				<span>si si-app_jcsjkh</span>
 				<span>基础数据考核</span>
 				<span class="codepoint">\f119</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf119;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jcsjcj"></i>
 				</span>
 				<span>si si-app_jcsjcj</span>
 				<span>基础数据采集</span>
 				<span class="codepoint">\f11a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xsjw"></i>
 				</span>
 				<span>si si-app_xsjw</span>
 				<span>学思践悟</span>
 				<span class="codepoint">\f11b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xqdm"></i>
 				</span>
 				<span>si si-app_xqdm</span>
 				<span>小区店面</span>
 				<span class="codepoint">\f11c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xqfws"></i>
 				</span>
 				<span>si si-app_xqfws</span>
 				<span>小区服务室</span>
 				<span class="codepoint">\f11d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jygl"></i>
 				</span>
 				<span>si si-app_jygl</span>
 				<span>就业管理</span>
 				<span class="codepoint">\f11e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jybz"></i>
 				</span>
 				<span>si si-app_jybz</span>
 				<span>就业补助</span>
 				<span class="codepoint">\f11f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf11f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xsll"></i>
 				</span>
 				<span>si si-app_xsll</span>
 				<span>巡视联络</span>
 				<span class="codepoint">\f120</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf120;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_gzrygl"></i>
 				</span>
 				<span>si si-app_gzrygl</span>
 				<span>工作人员管理</span>
 				<span class="codepoint">\f121</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf121;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_gzdt"></i>
 				</span>
 				<span>si si-app_gzdt</span>
 				<span>工作动态</span>
 				<span class="codepoint">\f122</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf122;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_srssjzx"></i>
 				</span>
 				<span>si si-app_srssjzx</span>
 				<span>市人社数据中心</span>
 				<span class="codepoint">\f123</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf123;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_smlt"></i>
 				</span>
 				<span>si si-app_smlt</span>
 				<span>市民论坛</span>
 				<span class="codepoint">\f124</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf124;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_cgyy"></i>
 				</span>
 				<span>si si-app_cgyy</span>
 				<span>成果运用</span>
 				<span class="codepoint">\f125</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf125;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wdgzt"></i>
 				</span>
 				<span>si si-app_wdgzt</span>
 				<span>我的工作台</span>
 				<span class="codepoint">\f126</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf126;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_hjbm"></i>
 				</span>
 				<span>si si-app_hjbm</span>
 				<span>户籍报名</span>
 				<span class="codepoint">\f127</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf127;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sssq"></i>
 				</span>
 				<span>si si-app_sssq</span>
 				<span>所属社区</span>
 				<span class="codepoint">\f128</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf128;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_zhdd"></i>
 				</span>
 				<span>si si-app_zhdd</span>
 				<span>指挥调度</span>
 				<span class="codepoint">\f129</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf129;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jyyw"></i>
 				</span>
 				<span>si si-app_jyyw</span>
 				<span>教育业务</span>
 				<span class="codepoint">\f12a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_szcg"></i>
 				</span>
 				<span>si si-app_szcg</span>
 				<span>数字城管</span>
 				<span class="codepoint">\f12b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wbgf"></i>
 				</span>
 				<span>si si-app_wbgf</span>
 				<span>文本规范</span>
 				<span class="codepoint">\f12c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rztj-51"></i>
 				</span>
 				<span>si si-app_rztj-51</span>
 				<span>日志统计</span>
 				<span class="codepoint">\f12d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rztj-64"></i>
 				</span>
 				<span>si si-app_rztj-64</span>
 				<span>日志统计</span>
 				<span class="codepoint">\f12e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_hszf"></i>
 				</span>
 				<span>si si-app_hszf</span>
 				<span>核实走访</span>
 				<span class="codepoint">\f12f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf12f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_ld"></i>
 				</span>
 				<span>si si-app_ld</span>
 				<span>楼栋</span>
 				<span class="codepoint">\f130</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf130;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_cjyw"></i>
 				</span>
 				<span>si si-app_cjyw</span>
 				<span>残疾业务</span>
 				<span class="codepoint">\f131</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf131;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_mzyw"></i>
 				</span>
 				<span>si si-app_mzyw</span>
 				<span>民政业务</span>
 				<span class="codepoint">\f132</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf132;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_msjm"></i>
 				</span>
 				<span>si si-app_msjm</span>
 				<span>民生集美</span>
 				<span class="codepoint">\f133</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf133;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_fgzd"></i>
 				</span>
 				<span>si si-app_fgzd</span>
 				<span>法规制度</span>
 				<span class="codepoint">\f134</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf134;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xfyw"></i>
 				</span>
 				<span>si si-app_xfyw</span>
 				<span>消防业务</span>
 				<span class="codepoint">\f135</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf135;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wy"></i>
 				</span>
 				<span>si si-app_wy</span>
 				<span>物业</span>
 				<span class="codepoint">\f136</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf136;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_dxfw"></i>
 				</span>
 				<span>si si-app_dxfw</span>
 				<span>短信服务</span>
 				<span class="codepoint">\f137</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf137;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqsy"></i>
 				</span>
 				<span>si si-app_sqsy</span>
 				<span>社区书院</span>
 				<span class="codepoint">\f138</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf138;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqjz"></i>
 				</span>
 				<span>si si-app_sqjz</span>
 				<span>社区救助</span>
 				<span class="codepoint">\f139</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf139;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqfw"></i>
 				</span>
 				<span>si si-app_sqfw</span>
 				<span>社区服务</span>
 				<span class="codepoint">\f13a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqxxfb"></i>
 				</span>
 				<span>si si-app_sqxxfb</span>
 				<span>社区消息发布</span>
 				<span class="codepoint">\f13b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqjz"></i>
 				</span>
 				<span>si si-app_sqjz</span>
 				<span>社区矫正</span>
 				<span class="codepoint">\f13c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqjj"></i>
 				</span>
 				<span>si si-app_sqjj</span>
 				<span>社区简介</span>
 				<span class="codepoint">\f13d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_sqzm"></i>
 				</span>
 				<span>si si-app_sqzm</span>
 				<span>社区证明</span>
 				<span class="codepoint">\f13e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-app_系统管理2_xtgl2"></i>
+					<i class="si si-app_xtgl2"></i>
 				</span>
-				<span>si si-app_系统管理2_xtgl2</span>
-				<span>系统管理</span>
+				<span>si si-app_xtgl2</span>
+				<span>系统管理2</span>
 				<span class="codepoint">\f13f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf13f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xtgl"></i>
 				</span>
 				<span>si si-app_xtgl</span>
 				<span>系统管理</span>
 				<span class="codepoint">\f140</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf140;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xsdb"></i>
 				</span>
 				<span>si si-app_xsdb</span>
 				<span>线索督办</span>
 				<span class="codepoint">\f141</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf141;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_tjfx"></i>
 				</span>
 				<span>si si-app_tjfx</span>
 				<span>统计分析</span>
 				<span class="codepoint">\f142</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf142;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_zhyw"></i>
 				</span>
 				<span>si si-app_zhyw</span>
 				<span>综合业务</span>
 				<span class="codepoint">\f143</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf143;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_zhcx"></i>
 				</span>
 				<span>si si-app_zhcx</span>
 				<span>综合查询</span>
 				<span class="codepoint">\f144</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf144;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wggl"></i>
 				</span>
 				<span>si si-app_wggl</span>
 				<span>网格管理</span>
 				<span class="codepoint">\f145</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf145;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wgjdgl"></i>
 				</span>
 				<span>si si-app_wgjdgl</span>
 				<span>网格进度管理</span>
 				<span class="codepoint">\f146</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf146;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_lnrga"></i>
 				</span>
 				<span>si si-app_lnrga</span>
 				<span>老年人关爱</span>
 				<span class="codepoint">\f147</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf147;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_khpg"></i>
 				</span>
 				<span>si si-app_khpg</span>
 				<span>考核评估</span>
 				<span class="codepoint">\f148</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf148;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_jsyw"></i>
 				</span>
 				<span>si si-app_jsyw</span>
 				<span>计生业务</span>
 				<span class="codepoint">\f149</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf149;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-app_认证2_rz2"></i>
+					<i class="si si-app_rz2"></i>
 				</span>
-				<span>si si-app_认证2_rz2</span>
-				<span>认证</span>
+				<span>si si-app_rz2</span>
+				<span>认证2</span>
 				<span class="codepoint">\f14a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rz"></i>
 				</span>
 				<span>si si-app_rz</span>
 				<span>认证</span>
 				<span class="codepoint">\f14b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_rzzx"></i>
 				</span>
 				<span>si si-app_rzzx</span>
 				<span>认证中心</span>
 				<span class="codepoint">\f14c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_zmgl"></i>
 				</span>
 				<span>si si-app_zmgl</span>
 				<span>证明管理</span>
 				<span class="codepoint">\f14d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_xqjm"></i>
 				</span>
 				<span>si si-app_xqjm</span>
 				<span>辖区居民</span>
 				<span class="codepoint">\f14e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_tgyw"></i>
 				</span>
 				<span>si si-app_tgyw</span>
 				<span>退管业务</span>
 				<span class="codepoint">\f14f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf14f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_tybg"></i>
 				</span>
 				<span>si si-app_tybg</span>
 				<span>通用办公</span>
 				<span class="codepoint">\f150</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf150;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_tztg"></i>
 				</span>
 				<span>si si-app_tztg</span>
 				<span>通知通告</span>
 				<span class="codepoint">\f151</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf151;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_pzgl"></i>
 				</span>
 				<span>si si-app_pzgl</span>
 				<span>配置管理</span>
 				<span class="codepoint">\f152</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf152;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_mjgl"></i>
 				</span>
 				<span>si si-app_mjgl</span>
 				<span>门禁管理</span>
 				<span class="codepoint">\f153</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf153;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-app_门禁管理（民警）_mjglmj"></i>
+					<i class="si si-app_mjglmj"></i>
 				</span>
-				<span>si si-app_门禁管理（民警）_mjglmj</span>
-				<span>门禁管理民警</span>
+				<span>si si-app_mjglmj</span>
+				<span>门禁管理（民警）</span>
 				<span class="codepoint">\f154</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf154;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_wtzg"></i>
 				</span>
 				<span>si si-app_wtzg</span>
 				<span>问题整改</span>
 				<span class="codepoint">\f155</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf155;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_fhjbm"></i>
 				</span>
 				<span>si si-app_fhjbm</span>
 				<span>非户籍报名</span>
 				<span class="codepoint">\f156</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf156;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-app_gxgl"></i>
 				</span>
 				<span>si si-app_gxgl</span>
 				<span>高校管理</span>
 				<span class="codepoint">\f157</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf157;</span>
 			</div>
 		</div>
 		<h2 class="page-header">com</h2>
 		<div class="row fontawesome-icon-list">
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_addto_addto"></i>
+					<i class="si si-com_addto"></i>
 				</span>
-				<span>si si-com_addto_addto</span>
-				<span></span>
+				<span>si si-com_addto</span>
+				<span>addto</span>
 				<span class="codepoint">\f158</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf158;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_android_android"></i>
+					<i class="si si-com_android"></i>
 				</span>
-				<span>si si-com_android_android</span>
-				<span></span>
+				<span>si si-com_android</span>
+				<span>android</span>
 				<span class="codepoint">\f159</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf159;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_apple_apple"></i>
+					<i class="si si-com_apple"></i>
 				</span>
-				<span>si si-com_apple_apple</span>
-				<span></span>
+				<span>si si-com_apple</span>
+				<span>apple</span>
 				<span class="codepoint">\f15a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_appsquareo_appsquareo"></i>
+					<i class="si si-com_appsquareo"></i>
 				</span>
-				<span>si si-com_appsquareo_appsquareo</span>
-				<span></span>
+				<span>si si-com_appsquareo</span>
+				<span>appsquareo</span>
 				<span class="codepoint">\f15b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_appsquare_appsquare"></i>
+					<i class="si si-com_appsquare"></i>
 				</span>
-				<span>si si-com_appsquare_appsquare</span>
-				<span></span>
+				<span>si si-com_appsquare</span>
+				<span>appsquare</span>
 				<span class="codepoint">\f15c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_arrowcircleodown_arrowcircleodown"></i>
+					<i class="si si-com_arrowcircleodown"></i>
 				</span>
-				<span>si si-com_arrowcircleodown_arrowcircleodown</span>
-				<span></span>
+				<span>si si-com_arrowcircleodown</span>
+				<span>arrowcircleodown</span>
 				<span class="codepoint">\f15d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_arrowscircleoup_arrowscircleoup"></i>
+					<i class="si si-com_arrowscircleoup"></i>
 				</span>
-				<span>si si-com_arrowscircleoup_arrowscircleoup</span>
-				<span></span>
+				<span>si si-com_arrowscircleoup</span>
+				<span>arrowscircleoup</span>
 				<span class="codepoint">\f15e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_bigcircleo_bigcircleo"></i>
+					<i class="si si-com_bigcircleo"></i>
 				</span>
-				<span>si si-com_bigcircleo_bigcircleo</span>
-				<span></span>
+				<span>si si-com_bigcircleo</span>
+				<span>bigcircleo</span>
 				<span class="codepoint">\f15f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf15f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_calendar_calendar"></i>
+					<i class="si si-com_calendar"></i>
 				</span>
-				<span>si si-com_calendar_calendar</span>
-				<span></span>
+				<span>si si-com_calendar</span>
+				<span>calendar</span>
 				<span class="codepoint">\f160</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf160;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_catalog2_catalog2"></i>
+					<i class="si si-com_catalog2"></i>
 				</span>
-				<span>si si-com_catalog2_catalog2</span>
-				<span></span>
+				<span>si si-com_catalog2</span>
+				<span>catalog2</span>
 				<span class="codepoint">\f161</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf161;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_chartarea_chartarea"></i>
+					<i class="si si-com_chartarea"></i>
 				</span>
-				<span>si si-com_chartarea_chartarea</span>
-				<span></span>
+				<span>si si-com_chartarea</span>
+				<span>chartarea</span>
 				<span class="codepoint">\f162</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf162;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_chartbar_chartbar"></i>
+					<i class="si si-com_chartbar"></i>
 				</span>
-				<span>si si-com_chartbar_chartbar</span>
-				<span></span>
+				<span>si si-com_chartbar</span>
+				<span>chartbar</span>
 				<span class="codepoint">\f163</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf163;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_chartline_chartline"></i>
+					<i class="si si-com_chartline"></i>
 				</span>
-				<span>si si-com_chartline_chartline</span>
-				<span></span>
+				<span>si si-com_chartline</span>
+				<span>chartline</span>
 				<span class="codepoint">\f164</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf164;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_chartpie_chartpie"></i>
+					<i class="si si-com_chartpie"></i>
 				</span>
-				<span>si si-com_chartpie_chartpie</span>
-				<span></span>
+				<span>si si-com_chartpie</span>
+				<span>chartpie</span>
 				<span class="codepoint">\f165</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf165;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_chrome_chrome"></i>
+					<i class="si si-com_chrome"></i>
 				</span>
-				<span>si si-com_chrome_chrome</span>
-				<span></span>
+				<span>si si-com_chrome</span>
+				<span>chrome</span>
 				<span class="codepoint">\f166</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf166;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_circleo_circleo"></i>
+					<i class="si si-com_circleo"></i>
 				</span>
-				<span>si si-com_circleo_circleo</span>
-				<span></span>
+				<span>si si-com_circleo</span>
+				<span>circleo</span>
 				<span class="codepoint">\f167</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf167;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_circle_circle"></i>
+					<i class="si si-com_circle"></i>
 				</span>
-				<span>si si-com_circle_circle</span>
-				<span></span>
+				<span>si si-com_circle</span>
+				<span>circle</span>
 				<span class="codepoint">\f168</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf168;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_clock_clock-07"></i>
+					<i class="si si-com_clock-07"></i>
 				</span>
-				<span>si si-com_clock_clock-07</span>
-				<span></span>
+				<span>si si-com_clock-07</span>
+				<span>clock</span>
 				<span class="codepoint">\f169</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf169;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_clock_clock-120"></i>
+					<i class="si si-com_clock-120"></i>
 				</span>
-				<span>si si-com_clock_clock-120</span>
-				<span></span>
+				<span>si si-com_clock-120</span>
+				<span>clock</span>
 				<span class="codepoint">\f16a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_collection_collection"></i>
+					<i class="si si-com_collection"></i>
 				</span>
-				<span>si si-com_collection_collection</span>
-				<span></span>
+				<span>si si-com_collection</span>
+				<span>collection</span>
 				<span class="codepoint">\f16b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_copy2_copy2"></i>
+					<i class="si si-com_copy2"></i>
 				</span>
-				<span>si si-com_copy2_copy2</span>
-				<span></span>
+				<span>si si-com_copy2</span>
+				<span>copy2</span>
 				<span class="codepoint">\f16c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_correct_correct-08"></i>
+					<i class="si si-com_correct-08"></i>
 				</span>
-				<span>si si-com_correct_correct-08</span>
-				<span></span>
+				<span>si si-com_correct-08</span>
+				<span>correct</span>
 				<span class="codepoint">\f16d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_correct_correct-73"></i>
+					<i class="si si-com_correct-73"></i>
 				</span>
-				<span>si si-com_correct_correct-73</span>
-				<span></span>
+				<span>si si-com_correct-73</span>
+				<span>correct</span>
 				<span class="codepoint">\f16e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_currentitem2_currentitem2"></i>
+					<i class="si si-com_currentitem2"></i>
 				</span>
-				<span>si si-com_currentitem2_currentitem2</span>
-				<span></span>
+				<span>si si-com_currentitem2</span>
+				<span>currentitem2</span>
 				<span class="codepoint">\f16f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf16f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_currentitem_currentitem"></i>
+					<i class="si si-com_currentitem"></i>
 				</span>
-				<span>si si-com_currentitem_currentitem</span>
-				<span></span>
+				<span>si si-com_currentitem</span>
+				<span>currentitem</span>
 				<span class="codepoint">\f170</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf170;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_damage_damage"></i>
+					<i class="si si-com_damage"></i>
 				</span>
-				<span>si si-com_damage_damage</span>
-				<span></span>
+				<span>si si-com_damage</span>
+				<span>damage</span>
 				<span class="codepoint">\f171</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf171;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_delete_delete"></i>
+					<i class="si si-com_delete"></i>
 				</span>
-				<span>si si-com_delete_delete</span>
-				<span></span>
+				<span>si si-com_delete</span>
+				<span>delete</span>
 				<span class="codepoint">\f172</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf172;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_display_display"></i>
+					<i class="si si-com_display"></i>
 				</span>
-				<span>si si-com_display_display</span>
-				<span></span>
+				<span>si si-com_display</span>
+				<span>display</span>
 				<span class="codepoint">\f173</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf173;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_dotcircle_dotcircle"></i>
+					<i class="si si-com_dotcircle"></i>
 				</span>
-				<span>si si-com_dotcircle_dotcircle</span>
-				<span></span>
+				<span>si si-com_dotcircle</span>
+				<span>dotcircle</span>
 				<span class="codepoint">\f174</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf174;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_doubt_doubt"></i>
+					<i class="si si-com_doubt"></i>
 				</span>
-				<span>si si-com_doubt_doubt</span>
-				<span></span>
+				<span>si si-com_doubt</span>
+				<span>doubt</span>
 				<span class="codepoint">\f175</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf175;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_edit_edit"></i>
+					<i class="si si-com_edit"></i>
 				</span>
-				<span>si si-com_edit_edit</span>
-				<span></span>
+				<span>si si-com_edit</span>
+				<span>edit</span>
 				<span class="codepoint">\f176</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf176;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_ellipsiscircle_ellipsiscircle"></i>
+					<i class="si si-com_ellipsiscircle"></i>
 				</span>
-				<span>si si-com_ellipsiscircle_ellipsiscircle</span>
-				<span></span>
+				<span>si si-com_ellipsiscircle</span>
+				<span>ellipsiscircle</span>
 				<span class="codepoint">\f177</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf177;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_enlarge_enlarge"></i>
+					<i class="si si-com_enlarge"></i>
 				</span>
-				<span>si si-com_enlarge_enlarge</span>
-				<span></span>
+				<span>si si-com_enlarge</span>
+				<span>enlarge</span>
 				<span class="codepoint">\f178</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf178;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_error_error-09"></i>
+					<i class="si si-com_error-09"></i>
 				</span>
-				<span>si si-com_error_error-09</span>
-				<span></span>
+				<span>si si-com_error-09</span>
+				<span>error</span>
 				<span class="codepoint">\f179</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf179;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_error_error-49"></i>
+					<i class="si si-com_error-49"></i>
 				</span>
-				<span>si si-com_error_error-49</span>
-				<span></span>
+				<span>si si-com_error-49</span>
+				<span>error</span>
 				<span class="codepoint">\f17a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_export_export"></i>
+					<i class="si si-com_export"></i>
 				</span>
-				<span>si si-com_export_export</span>
-				<span></span>
+				<span>si si-com_export</span>
+				<span>export</span>
 				<span class="codepoint">\f17b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_fileo_fileo"></i>
+					<i class="si si-com_fileo"></i>
 				</span>
-				<span>si si-com_fileo_fileo</span>
-				<span></span>
+				<span>si si-com_fileo</span>
+				<span>fileo</span>
 				<span class="codepoint">\f17c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_filepictureo_filepictureo"></i>
+					<i class="si si-com_filepictureo"></i>
 				</span>
-				<span>si si-com_filepictureo_filepictureo</span>
-				<span></span>
+				<span>si si-com_filepictureo</span>
+				<span>filepictureo</span>
 				<span class="codepoint">\f17d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_filepicture_filepicture"></i>
+					<i class="si si-com_filepicture"></i>
 				</span>
-				<span>si si-com_filepicture_filepicture</span>
-				<span></span>
+				<span>si si-com_filepicture</span>
+				<span>filepicture</span>
 				<span class="codepoint">\f17e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_filetexto_filetexto"></i>
+					<i class="si si-com_filetexto"></i>
 				</span>
-				<span>si si-com_filetexto_filetexto</span>
-				<span></span>
+				<span>si si-com_filetexto</span>
+				<span>filetexto</span>
 				<span class="codepoint">\f17f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf17f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_filetext_filetext"></i>
+					<i class="si si-com_filetext"></i>
 				</span>
-				<span>si si-com_filetext_filetext</span>
-				<span></span>
+				<span>si si-com_filetext</span>
+				<span>filetext</span>
 				<span class="codepoint">\f180</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf180;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_file_file"></i>
+					<i class="si si-com_file"></i>
 				</span>
-				<span>si si-com_file_file</span>
-				<span></span>
+				<span>si si-com_file</span>
+				<span>file</span>
 				<span class="codepoint">\f181</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf181;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_flag_flag"></i>
+					<i class="si si-com_flag"></i>
 				</span>
-				<span>si si-com_flag_flag</span>
-				<span></span>
+				<span>si si-com_flag</span>
+				<span>flag</span>
 				<span class="codepoint">\f182</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf182;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_folderopeno_folderopeno"></i>
+					<i class="si si-com_folderopeno"></i>
 				</span>
-				<span>si si-com_folderopeno_folderopeno</span>
-				<span></span>
+				<span>si si-com_folderopeno</span>
+				<span>folderopeno</span>
 				<span class="codepoint">\f183</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf183;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_folderopen_folderopen"></i>
+					<i class="si si-com_folderopen"></i>
 				</span>
-				<span>si si-com_folderopen_folderopen</span>
-				<span></span>
+				<span>si si-com_folderopen</span>
+				<span>folderopen</span>
 				<span class="codepoint">\f184</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf184;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_foldero_foldero"></i>
+					<i class="si si-com_foldero"></i>
 				</span>
-				<span>si si-com_foldero_foldero</span>
-				<span></span>
+				<span>si si-com_foldero</span>
+				<span>foldero</span>
 				<span class="codepoint">\f185</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf185;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_folder_folder"></i>
+					<i class="si si-com_folder"></i>
 				</span>
-				<span>si si-com_folder_folder</span>
-				<span></span>
+				<span>si si-com_folder</span>
+				<span>folder</span>
 				<span class="codepoint">\f186</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf186;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_folding_folding"></i>
+					<i class="si si-com_folding"></i>
 				</span>
-				<span>si si-com_folding_folding</span>
-				<span></span>
+				<span>si si-com_folding</span>
+				<span>folding</span>
 				<span class="codepoint">\f187</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf187;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_github_github"></i>
+					<i class="si si-com_github"></i>
 				</span>
-				<span>si si-com_github_github</span>
-				<span></span>
+				<span>si si-com_github</span>
+				<span>github</span>
 				<span class="codepoint">\f188</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf188;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_gitlab_gitlab"></i>
+					<i class="si si-com_gitlab"></i>
 				</span>
-				<span>si si-com_gitlab_gitlab</span>
-				<span></span>
+				<span>si si-com_gitlab</span>
+				<span>gitlab</span>
 				<span class="codepoint">\f189</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf189;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_heart _heart "></i>
+					<i class="si si-com_heart "></i>
 				</span>
-				<span>si si-com_heart _heart </span>
-				<span></span>
+				<span>si si-com_heart </span>
+				<span>heart </span>
 				<span class="codepoint">\f18a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf18a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_hearto_hearto"></i>
+					<i class="si si-com_hearto"></i>
 				</span>
-				<span>si si-com_hearto_hearto</span>
-				<span></span>
+				<span>si si-com_hearto</span>
+				<span>hearto</span>
 				<span class="codepoint">\f18b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf18b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_help_help"></i>
+					<i class="si si-com_help"></i>
 				</span>
-				<span>si si-com_help_help</span>
-				<span></span>
+				<span>si si-com_help</span>
+				<span>help</span>
 				<span class="codepoint">\f18c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf18c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
+				<span>
+					<i class="si si-com"></i>
+				</span>
+				<span>si si-com</span>
+				<span>home</span>
+				<span class="codepoint">\f18d</span>
+				<span class="content" style="display: none;">&#xf18d;</span>
+			</div>
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
+				<span>
+					<i class="si si-com_homeo"></i>
+				</span>
+				<span>si si-com_homeo</span>
+				<span>homeo</span>
+				<span class="codepoint">\f18e</span>
+				<span class="content" style="display: none;">&#xf18e;</span>
+			</div>
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
 					<i class="si si-com_home"></i>
 				</span>
 				<span>si si-com_home</span>
-				<span></span>
-				<span class="codepoint">\f18d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
-			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
-				<span>
-					<i class="si si-com_homeo_homeo"></i>
-				</span>
-				<span>si si-com_homeo_homeo</span>
-				<span></span>
-				<span class="codepoint">\f18e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
-			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
-				<span>
-					<i class="si si-com_home_home"></i>
-				</span>
-				<span>si si-com_home_home</span>
-				<span></span>
+				<span>home</span>
 				<span class="codepoint">\f18f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf18f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_html5"></i>
+					<i class="si si-com"></i>
 				</span>
-				<span>si si-com_html5</span>
-				<span></span>
+				<span>si si-com</span>
+				<span>html5</span>
 				<span class="codepoint">\f190</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf190;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_image_image"></i>
+					<i class="si si-com_image"></i>
 				</span>
-				<span>si si-com_image_image</span>
-				<span></span>
+				<span>si si-com_image</span>
+				<span>image</span>
 				<span class="codepoint">\f191</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf191;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_increase_increase"></i>
+					<i class="si si-com_increase"></i>
 				</span>
-				<span>si si-com_increase_increase</span>
-				<span></span>
+				<span>si si-com_increase</span>
+				<span>increase</span>
 				<span class="codepoint">\f192</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf192;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_institution"></i>
+					<i class="si si-com"></i>
 				</span>
-				<span>si si-com_institution</span>
-				<span></span>
+				<span>si si-com</span>
+				<span>institution</span>
 				<span class="codepoint">\f193</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf193;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_label_label"></i>
+					<i class="si si-com_label"></i>
 				</span>
-				<span>si si-com_label_label</span>
-				<span></span>
+				<span>si si-com_label</span>
+				<span>label</span>
 				<span class="codepoint">\f194</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf194;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_leftsign_leftsign"></i>
+					<i class="si si-com_leftsign"></i>
 				</span>
-				<span>si si-com_leftsign_leftsign</span>
-				<span></span>
+				<span>si si-com_leftsign</span>
+				<span>leftsign</span>
 				<span class="codepoint">\f195</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf195;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_left_left"></i>
+					<i class="si si-com_left"></i>
 				</span>
-				<span>si si-com_left_left</span>
-				<span></span>
+				<span>si si-com_left</span>
+				<span>left</span>
 				<span class="codepoint">\f196</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf196;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_link2_link2"></i>
+					<i class="si si-com_link2"></i>
 				</span>
-				<span>si si-com_link2_link2</span>
-				<span></span>
+				<span>si si-com_link2</span>
+				<span>link2</span>
 				<span class="codepoint">\f197</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf197;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_link_link"></i>
+					<i class="si si-com_link"></i>
 				</span>
-				<span>si si-com_link_link</span>
-				<span></span>
+				<span>si si-com_link</span>
+				<span>link</span>
 				<span class="codepoint">\f198</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf198;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_listsquareo_listsquareo"></i>
+					<i class="si si-com_listsquareo"></i>
 				</span>
-				<span>si si-com_listsquareo_listsquareo</span>
-				<span></span>
+				<span>si si-com_listsquareo</span>
+				<span>listsquareo</span>
 				<span class="codepoint">\f199</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf199;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_load_load"></i>
+					<i class="si si-com_load"></i>
 				</span>
-				<span>si si-com_load_load</span>
-				<span></span>
+				<span>si si-com_load</span>
+				<span>load</span>
 				<span class="codepoint">\f19a</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19a;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_location_location"></i>
+					<i class="si si-com_location"></i>
 				</span>
-				<span>si si-com_location_location</span>
-				<span></span>
+				<span>si si-com_location</span>
+				<span>location</span>
 				<span class="codepoint">\f19b</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19b;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_lock_lock"></i>
+					<i class="si si-com_lock"></i>
 				</span>
-				<span>si si-com_lock_lock</span>
-				<span></span>
+				<span>si si-com_lock</span>
+				<span>lock</span>
 				<span class="codepoint">\f19c</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19c;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_loop_loop"></i>
+					<i class="si si-com_loop"></i>
 				</span>
-				<span>si si-com_loop_loop</span>
-				<span></span>
+				<span>si si-com_loop</span>
+				<span>loop</span>
 				<span class="codepoint">\f19d</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19d;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_lower_lower-20"></i>
+					<i class="si si-com_lower-20"></i>
 				</span>
-				<span>si si-com_lower_lower-20</span>
-				<span></span>
+				<span>si si-com_lower-20</span>
+				<span>lower</span>
 				<span class="codepoint">\f19e</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19e;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_lower_lower-64"></i>
+					<i class="si si-com_lower-64"></i>
 				</span>
-				<span>si si-com_lower_lower-64</span>
-				<span></span>
+				<span>si si-com_lower-64</span>
+				<span>lower</span>
 				<span class="codepoint">\f19f</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf19f;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_magnifier_magnifier"></i>
+					<i class="si si-com_magnifier"></i>
 				</span>
-				<span>si si-com_magnifier_magnifier</span>
-				<span></span>
+				<span>si si-com_magnifier</span>
+				<span>magnifier</span>
 				<span class="codepoint">\f1a0</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a0;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_mail_mail"></i>
+					<i class="si si-com_mail"></i>
 				</span>
-				<span>si si-com_mail_mail</span>
-				<span></span>
+				<span>si si-com_mail</span>
+				<span>mail</span>
 				<span class="codepoint">\f1a1</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a1;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_maplocation2_maplocation2"></i>
+					<i class="si si-com_maplocation2"></i>
 				</span>
-				<span>si si-com_maplocation2_maplocation2</span>
-				<span></span>
+				<span>si si-com_maplocation2</span>
+				<span>maplocation2</span>
 				<span class="codepoint">\f1a2</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a2;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_maplocation_maplocation"></i>
+					<i class="si si-com_maplocation"></i>
 				</span>
-				<span>si si-com_maplocation_maplocation</span>
-				<span></span>
+				<span>si si-com_maplocation</span>
+				<span>maplocation</span>
 				<span class="codepoint">\f1a3</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a3;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_minuscircle_minus-circle"></i>
+					<i class="si si-com_minus-circle"></i>
 				</span>
-				<span>si si-com_minuscircle_minus-circle</span>
-				<span></span>
+				<span>si si-com_minus-circle</span>
+				<span>minuscircle</span>
 				<span class="codepoint">\f1a4</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a4;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_more_more"></i>
+					<i class="si si-com_more"></i>
 				</span>
-				<span>si si-com_more_more</span>
-				<span></span>
+				<span>si si-com_more</span>
+				<span>more</span>
 				<span class="codepoint">\f1a5</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a5;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_narrow_narrow"></i>
+					<i class="si si-com_narrow"></i>
 				</span>
-				<span>si si-com_narrow_narrow</span>
-				<span></span>
+				<span>si si-com_narrow</span>
+				<span>narrow</span>
 				<span class="codepoint">\f1a6</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a6;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_news_news"></i>
+					<i class="si si-com_news"></i>
 				</span>
-				<span>si si-com_news_news</span>
-				<span></span>
+				<span>si si-com_news</span>
+				<span>news</span>
 				<span class="codepoint">\f1a7</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a7;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_noimageo_noimageo"></i>
+					<i class="si si-com_noimageo"></i>
 				</span>
-				<span>si si-com_noimageo_noimageo</span>
-				<span></span>
+				<span>si si-com_noimageo</span>
+				<span>noimageo</span>
 				<span class="codepoint">\f1a8</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a8;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_notebook_notebook"></i>
+					<i class="si si-com_notebook"></i>
 				</span>
-				<span>si si-com_notebook_notebook</span>
-				<span></span>
+				<span>si si-com_notebook</span>
+				<span>notebook</span>
 				<span class="codepoint">\f1a9</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1a9;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_notice_notice"></i>
+					<i class="si si-com_notice"></i>
 				</span>
-				<span>si si-com_notice_notice</span>
-				<span></span>
+				<span>si si-com_notice</span>
+				<span>notice</span>
 				<span class="codepoint">\f1aa</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1aa;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_pen_pen"></i>
+					<i class="si si-com_pen"></i>
 				</span>
-				<span>si si-com_pen_pen</span>
-				<span></span>
+				<span>si si-com_pen</span>
+				<span>pen</span>
 				<span class="codepoint">\f1ab</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ab;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_personnel_personnel"></i>
+					<i class="si si-com_personnel"></i>
 				</span>
-				<span>si si-com_personnel_personnel</span>
-				<span></span>
+				<span>si si-com_personnel</span>
+				<span>personnel</span>
 				<span class="codepoint">\f1ac</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ac;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_photograph_photograph"></i>
+					<i class="si si-com_photograph"></i>
 				</span>
-				<span>si si-com_photograph_photograph</span>
-				<span></span>
+				<span>si si-com_photograph</span>
+				<span>photograph</span>
 				<span class="codepoint">\f1ad</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ad;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_plus_plus"></i>
+					<i class="si si-com_plus"></i>
 				</span>
-				<span>si si-com_plus_plus</span>
-				<span></span>
+				<span>si si-com_plus</span>
+				<span>plus</span>
 				<span class="codepoint">\f1ae</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ae;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_position_position"></i>
+					<i class="si si-com_position"></i>
 				</span>
-				<span>si si-com_position_position</span>
-				<span></span>
+				<span>si si-com_position</span>
+				<span>position</span>
 				<span class="codepoint">\f1af</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1af;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_preservation_preservation"></i>
+					<i class="si si-com_preservation"></i>
 				</span>
-				<span>si si-com_preservation_preservation</span>
-				<span></span>
+				<span>si si-com_preservation</span>
+				<span>preservation</span>
 				<span class="codepoint">\f1b0</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b0;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_print_print"></i>
+					<i class="si si-com_print"></i>
 				</span>
-				<span>si si-com_print_print</span>
-				<span></span>
+				<span>si si-com_print</span>
+				<span>print</span>
 				<span class="codepoint">\f1b1</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b1;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_problem_problem"></i>
+					<i class="si si-com_problem"></i>
 				</span>
-				<span>si si-com_problem_problem</span>
-				<span></span>
+				<span>si si-com_problem</span>
+				<span>problem</span>
 				<span class="codepoint">\f1b2</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b2;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_prompt_prompt"></i>
+					<i class="si si-com_prompt"></i>
 				</span>
-				<span>si si-com_prompt_prompt</span>
-				<span></span>
+				<span>si si-com_prompt</span>
+				<span>prompt</span>
 				<span class="codepoint">\f1b3</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b3;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_qq_qq"></i>
+					<i class="si si-com_qq"></i>
 				</span>
-				<span>si si-com_qq_qq</span>
-				<span></span>
+				<span>si si-com_qq</span>
+				<span>qq</span>
 				<span class="codepoint">\f1b4</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b4;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_reduce_reduce"></i>
+					<i class="si si-com_reduce"></i>
 				</span>
-				<span>si si-com_reduce_reduce</span>
-				<span></span>
+				<span>si si-com_reduce</span>
+				<span>reduce</span>
 				<span class="codepoint">\f1b5</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b5;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_rightsign_rightsign"></i>
+					<i class="si si-com_rightsign"></i>
 				</span>
-				<span>si si-com_rightsign_rightsign</span>
-				<span></span>
+				<span>si si-com_rightsign</span>
+				<span>rightsign</span>
 				<span class="codepoint">\f1b6</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b6;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_right_right"></i>
+					<i class="si si-com_right"></i>
 				</span>
-				<span>si si-com_right_right</span>
-				<span></span>
+				<span>si si-com_right</span>
+				<span>right</span>
 				<span class="codepoint">\f1b7</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b7;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_rocket_rocket-118"></i>
+					<i class="si si-com_rocket-118"></i>
 				</span>
-				<span>si si-com_rocket_rocket-118</span>
-				<span></span>
+				<span>si si-com_rocket-118</span>
+				<span>rocket</span>
 				<span class="codepoint">\f1b8</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b8;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_rocket_rocket-27"></i>
+					<i class="si si-com_rocket-27"></i>
 				</span>
-				<span>si si-com_rocket_rocket-27</span>
-				<span></span>
+				<span>si si-com_rocket-27</span>
+				<span>rocket</span>
 				<span class="codepoint">\f1b9</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1b9;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_rotate_rotate"></i>
+					<i class="si si-com_rotate"></i>
 				</span>
-				<span>si si-com_rotate_rotate</span>
-				<span></span>
+				<span>si si-com_rotate</span>
+				<span>rotate</span>
 				<span class="codepoint">\f1ba</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ba;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_searchplus_searchplus"></i>
+					<i class="si si-com_searchplus"></i>
 				</span>
-				<span>si si-com_searchplus_searchplus</span>
-				<span></span>
+				<span>si si-com_searchplus</span>
+				<span>searchplus</span>
 				<span class="codepoint">\f1bb</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1bb;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_search_search"></i>
+					<i class="si si-com_search"></i>
 				</span>
-				<span>si si-com_search_search</span>
-				<span></span>
+				<span>si si-com_search</span>
+				<span>search</span>
 				<span class="codepoint">\f1bc</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1bc;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_see_see"></i>
+					<i class="si si-com_see"></i>
 				</span>
-				<span>si si-com_see_see</span>
-				<span></span>
+				<span>si si-com_see</span>
+				<span>see</span>
 				<span class="codepoint">\f1bd</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1bd;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_setup_setup"></i>
+					<i class="si si-com_setup"></i>
 				</span>
-				<span>si si-com_setup_setup</span>
-				<span></span>
+				<span>si si-com_setup</span>
+				<span>setup</span>
 				<span class="codepoint">\f1be</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1be;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_shortmessage_shortmessage"></i>
+					<i class="si si-com_shortmessage"></i>
 				</span>
-				<span>si si-com_shortmessage_shortmessage</span>
-				<span></span>
+				<span>si si-com_shortmessage</span>
+				<span>shortmessage</span>
 				<span class="codepoint">\f1bf</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1bf;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_sitemap_sitemap"></i>
+					<i class="si si-com_sitemap"></i>
 				</span>
-				<span>si si-com_sitemap_sitemap</span>
-				<span></span>
+				<span>si si-com_sitemap</span>
+				<span>sitemap</span>
 				<span class="codepoint">\f1c0</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c0;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_smallbell_smallbell"></i>
+					<i class="si si-com_smallbell"></i>
 				</span>
-				<span>si si-com_smallbell_smallbell</span>
-				<span></span>
+				<span>si si-com_smallbell</span>
+				<span>smallbell</span>
 				<span class="codepoint">\f1c1</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c1;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_sortleft_sortleft"></i>
+					<i class="si si-com_sortleft"></i>
 				</span>
-				<span>si si-com_sortleft_sortleft</span>
-				<span></span>
+				<span>si si-com_sortleft</span>
+				<span>sortleft</span>
 				<span class="codepoint">\f1c2</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c2;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_sortright_sortright"></i>
+					<i class="si si-com_sortright"></i>
 				</span>
-				<span>si si-com_sortright_sortright</span>
-				<span></span>
+				<span>si si-com_sortright</span>
+				<span>sortright</span>
 				<span class="codepoint">\f1c3</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c3;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_star_star"></i>
+					<i class="si si-com_star"></i>
 				</span>
-				<span>si si-com_star_star</span>
-				<span></span>
+				<span>si si-com_star</span>
+				<span>star</span>
 				<span class="codepoint">\f1c4</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c4;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_suspend_suspend"></i>
+					<i class="si si-com_suspend"></i>
 				</span>
-				<span>si si-com_suspend_suspend</span>
-				<span></span>
+				<span>si si-com_suspend</span>
+				<span>suspend</span>
 				<span class="codepoint">\f1c5</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c5;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_task_task"></i>
+					<i class="si si-com_task"></i>
 				</span>
-				<span>si si-com_task_task</span>
-				<span></span>
+				<span>si si-com_task</span>
+				<span>task</span>
 				<span class="codepoint">\f1c6</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c6;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_text_text"></i>
+					<i class="si si-com_text"></i>
 				</span>
-				<span>si si-com_text_text</span>
-				<span></span>
+				<span>si si-com_text</span>
+				<span>text</span>
 				<span class="codepoint">\f1c7</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c7;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_upanddown_upanddown"></i>
+					<i class="si si-com_upanddown"></i>
 				</span>
-				<span>si si-com_upanddown_upanddown</span>
-				<span></span>
+				<span>si si-com_upanddown</span>
+				<span>upanddown</span>
 				<span class="codepoint">\f1c8</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c8;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_upper_upper"></i>
+					<i class="si si-com_upper"></i>
 				</span>
-				<span>si si-com_upper_upper</span>
-				<span></span>
+				<span>si si-com_upper</span>
+				<span>upper</span>
 				<span class="codepoint">\f1c9</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1c9;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_up_up"></i>
+					<i class="si si-com_up"></i>
 				</span>
-				<span>si si-com_up_up</span>
-				<span></span>
+				<span>si si-com_up</span>
+				<span>up</span>
 				<span class="codepoint">\f1ca</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ca;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_usero_usero"></i>
+					<i class="si si-com_usero"></i>
 				</span>
-				<span>si si-com_usero_usero</span>
-				<span></span>
+				<span>si si-com_usero</span>
+				<span>usero</span>
 				<span class="codepoint">\f1cb</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1cb;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_user_user"></i>
+					<i class="si si-com_user"></i>
 				</span>
-				<span>si si-com_user_user</span>
-				<span></span>
+				<span>si si-com_user</span>
+				<span>user</span>
 				<span class="codepoint">\f1cc</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1cc;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_wechat_wechat"></i>
+					<i class="si si-com_wechat"></i>
 				</span>
-				<span>si si-com_wechat_wechat</span>
-				<span></span>
+				<span>si si-com_wechat</span>
+				<span>wechat</span>
 				<span class="codepoint">\f1cd</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1cd;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_weibo_weibo"></i>
+					<i class="si si-com_weibo"></i>
 				</span>
-				<span>si si-com_weibo_weibo</span>
-				<span></span>
+				<span>si si-com_weibo</span>
+				<span>weibo</span>
 				<span class="codepoint">\f1ce</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1ce;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_zoomin_zoomin"></i>
+					<i class="si si-com_zoomin"></i>
 				</span>
-				<span>si si-com_zoomin_zoomin</span>
-				<span></span>
+				<span>si si-com_zoomin</span>
+				<span>zoomin</span>
 				<span class="codepoint">\f1cf</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1cf;</span>
 			</div>
-			<div class="fa-hover col-md-3 col-sm-4">
+			<div class="fa-hover col-md-3 col-sm-4" data-toggle="tooltip" data-placement="top" title="点击复制">
 				<span>
-					<i class="si si-com_zoomout_zoomout"></i>
+					<i class="si si-com_zoomout"></i>
 				</span>
-				<span>si si-com_zoomout_zoomout</span>
-				<span></span>
+				<span>si si-com_zoomout</span>
+				<span>zoomout</span>
 				<span class="codepoint">\f1d0</span>
-				<span>
-					<a href="javascript:;" class="copy">复制</a>
-				</span>
+				<span class="content" style="display: none;">&#xf1d0;</span>
 			</div>
 		</div>
 	</div>
@@ -3086,7 +2683,7 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 			});
 		}
 		$(function () {
-			$('.copy').on('click', function (e) {
+			/** $('.copy').on('click', function (e) {
 				e.preventDefault();
 				var $codepoint = $.trim($(this).parent().siblings('.codepoint').html());
 				copyTextToClipboard($codepoint);
@@ -3094,10 +2691,17 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 				setTimeout(function () {
 					$('.alert').hide();
 				}, 2000);
+			}); **/
+
+			$('.fa-hover').on('click', function(){
+				var $codepoint = $.trim($(this).find('.content').html());
+				copyTextToClipboard($codepoint);
+
+				$(this).attr('title', '复制成功！').tooltip('fixTitle').tooltip('show');
 			});
 
 			$('.search').on('input porpertychange', function (e) {
-				var value = $(this).val();
+				var value = $.trim($(this).val());
 
 				$('.fa-hover').each(function () {
 						var match = false;
@@ -3117,6 +2721,10 @@ url("shareuifont.woff?57516d714ce4c3841339e046e4a54eec") format("woff");
 						}
 				});
 			});
+
+				$(".fa-hover").hover(function(){
+					$(this).attr('title', '点击复制').tooltip('fixTitle').tooltip('show');
+				});
 		})
 	</script>
 </body>
