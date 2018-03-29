@@ -1,0 +1,12 @@
+{
+  "name": "@share/shareui-font",
+  "version": "2.0.3",
+  "description": "ShareUI-font 是畅享信息内部使用的一套视觉体验一致的基础图标库，由畅享信息设计团队为公司内部项目量身设计，令用户的使用感知更加统一。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

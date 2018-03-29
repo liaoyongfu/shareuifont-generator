@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#F29600;stroke-width:0.25;stroke-miterlimit:10;}
+	.st3{display:inline;fill:none;stroke:#F29600;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="图层_1" class="st0">
+	<g id="XMLID_83_" class="st1">
+		<rect id="XMLID_90_" class="st2" width="512" height="512"/>
+		<line id="XMLID_89_" class="st2" x1="0" y1="384" x2="512" y2="384"/>
+		<line id="XMLID_88_" class="st2" x1="0" y1="256" x2="512" y2="256"/>
+		<line id="XMLID_87_" class="st2" x1="0" y1="128" x2="512" y2="128"/>
+		<line id="XMLID_86_" class="st2" x1="384" y1="0" x2="384" y2="512"/>
+		<line id="XMLID_85_" class="st2" x1="256" y1="0" x2="256" y2="512"/>
+		<line id="XMLID_84_" class="st2" x1="128" y1="0" x2="128" y2="512"/>
+	</g>
+	<ellipse id="XMLID_82_" class="st3" cx="256" cy="256" rx="256" ry="256"/>
+</g>
+<g id="图层_2">
+	<g id="XMLID_442_">
+		<polygon id="XMLID_446_" points="405.2,351.8 451.6,305.4 305.4,305.4 305.4,451.6 351.8,405.2 452.6,506 506,452.6 		"/>
+		<polygon id="XMLID_445_" points="60.4,206.6 206.6,206.6 206.6,60.4 160.2,106.8 59.4,6 6,59.4 106.8,160.2 		"/>
+		<polygon id="XMLID_444_" points="405.2,160.2 506,59.4 452.6,6 351.8,106.8 305.4,60.4 305.4,206.6 451.6,206.6 		"/>
+		<polygon id="XMLID_443_" points="106.8,351.8 6,452.6 59.4,506 160.2,405.2 206.6,451.6 206.6,305.4 60.4,305.4 		"/>
+	</g>
+</g>
+</svg>

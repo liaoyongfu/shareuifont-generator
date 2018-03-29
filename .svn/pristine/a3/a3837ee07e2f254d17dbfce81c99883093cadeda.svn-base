@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;opacity:0.5;}
+	.st1{display:inline;}
+	.st2{fill:none;}
+</style>
+<g id="图层_1" class="st0">
+</g>
+<g id="图层_2">
+	<path d="M256,24.1L60,132.5v23c0,6.4,5.2,11.6,11.6,11.6h368.9c6.4,0,11.6-5.2,11.6-11.6v-23L256,24.1z"/>
+	<path d="M141.3,387.3h-31.9c-7.8,0-14-6.3-14-14V215.7c0-7.8,6.3-14,14-14h31.9c7.8,0,14,6.3,14,14v157.5
+		C155.3,381,149,387.3,141.3,387.3z"/>
+	<path d="M271.9,387.3h-31.9c-7.8,0-14-6.3-14-14V215.7c0-7.8,6.3-14,14-14h31.9c7.8,0,14,6.3,14,14v157.5
+		C286,381,279.7,387.3,271.9,387.3z"/>
+	<path d="M402.6,387.3h-31.9c-7.8,0-14-6.3-14-14V215.7c0-7.8,6.3-14,14-14h31.9c7.8,0,14,6.3,14,14v157.5
+		C416.6,381,410.3,387.3,402.6,387.3z"/>
+	<path d="M452,436v31.9c0,7.8-6.3,14-14,14H74c-7.8,0-14-6.3-14-14V436c0-7.8,6.3-14,14-14H438C445.7,421.9,452,428.2,452,436z"/>
+</g>
+</svg>

@@ -1,0 +1,6288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>shareuifont</title>
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 40px 20px 10px;
+		}
+
+		h1, h2{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		.preview {
+			line-height: 2em;
+		}
+
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+
+		th, td{
+			text-align: center;
+			vertical-align: middle!important;
+		}
+
+		#top{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background: #fff;
+			padding: 20px;
+		}
+
+		#content{
+			margin-top: 95px;
+		}
+
+		.alert {
+			display: none;
+			position: fixed;
+			top: 30px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.search{
+			border-color: navy;
+    	color: navy;
+		}
+
+		.codepoint {
+			border: none;
+			background: transparent;
+		}
+
+			.si
+
+			{
+			display: inline-block;
+			font-size: 32px;
+		}
+
+			@font-face {
+	font-family: "shareuifont";
+	src: url("shareuifont.eot?d88167d95d2ca80e6149b1ce2e249ab9?#iefix") format("embedded-opentype"),
+url("shareuifont.woff2?d88167d95d2ca80e6149b1ce2e249ab9") format("woff2"),
+url("shareuifont.woff?d88167d95d2ca80e6149b1ce2e249ab9") format("woff");
+}
+
+.si {
+	line-height: 1;
+}
+
+.si:before {
+	font-family: shareuifont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.si-APP_ztyw:before {
+	content: "\f101";
+}
+.si-APP_ywdh:before {
+	content: "\f102";
+}
+.si-APP_ywh:before {
+	content: "\f103";
+}
+.si-APP_lwhzb:before {
+	content: "\f104";
+}
+.si-APP_lwwgtjb:before {
+	content: "\f105";
+}
+.si-APP_lwkhb:before {
+	content: "\f106";
+}
+.si-APP_grzx:before {
+	content: "\f107";
+}
+.si-APP_sjcl-09:before {
+	content: "\f108";
+}
+.si-APP_sjcl-34:before {
+	content: "\f109";
+}
+.si-APP_sjyj:before {
+	content: "\f10a";
+}
+.si-APP_hdgz:before {
+	content: "\f10b";
+}
+.si-APP_rsyw:before {
+	content: "\f10c";
+}
+.si-APP_rwzx:before {
+	content: "\f10d";
+}
+.si-APP_qygl:before {
+	content: "\f10e";
+}
+.si-APP_qqxxgl:before {
+	content: "\f10f";
+}
+.si-APP_xxfb:before {
+	content: "\f110";
+}
+.si-APP_dy:before {
+	content: "\f111";
+}
+.si-APP_djyw:before {
+	content: "\f112";
+}
+.si-APP_ggaq:before {
+	content: "\f113";
+}
+.si-APP_gayw:before {
+	content: "\f114";
+}
+.si-APP_jcfx:before {
+	content: "\f115";
+}
+.si-APP_办公OA_bgoa:before {
+	content: "\f116";
+}
+.si-APP_csbj:before {
+	content: "\f117";
+}
+.si-APP_jcsj:before {
+	content: "\f118";
+}
+.si-APP_jcsjkh:before {
+	content: "\f119";
+}
+.si-APP_jcsjcj:before {
+	content: "\f11a";
+}
+.si-APP_xsjw:before {
+	content: "\f11b";
+}
+.si-APP_xqdm:before {
+	content: "\f11c";
+}
+.si-APP_xqfws:before {
+	content: "\f11d";
+}
+.si-APP_jygl:before {
+	content: "\f11e";
+}
+.si-APP_jybz:before {
+	content: "\f11f";
+}
+.si-APP_xsll:before {
+	content: "\f120";
+}
+.si-APP_gzrygl:before {
+	content: "\f121";
+}
+.si-APP_gzdt:before {
+	content: "\f122";
+}
+.si-APP_srssjzx:before {
+	content: "\f123";
+}
+.si-APP_smlt:before {
+	content: "\f124";
+}
+.si-APP_cgyy:before {
+	content: "\f125";
+}
+.si-APP_wdgzt:before {
+	content: "\f126";
+}
+.si-APP_hjbm:before {
+	content: "\f127";
+}
+.si-APP_sssq:before {
+	content: "\f128";
+}
+.si-APP_zhdd:before {
+	content: "\f129";
+}
+.si-APP_jyyw:before {
+	content: "\f12a";
+}
+.si-APP_szcg:before {
+	content: "\f12b";
+}
+.si-APP_wbgf:before {
+	content: "\f12c";
+}
+.si-APP_rztj-51:before {
+	content: "\f12d";
+}
+.si-APP_rztj-64:before {
+	content: "\f12e";
+}
+.si-APP_hszf:before {
+	content: "\f12f";
+}
+.si-APP_ld:before {
+	content: "\f130";
+}
+.si-APP_cjyw:before {
+	content: "\f131";
+}
+.si-APP_mzyw:before {
+	content: "\f132";
+}
+.si-APP_msjm:before {
+	content: "\f133";
+}
+.si-APP_fgzd:before {
+	content: "\f134";
+}
+.si-APP_xfyw:before {
+	content: "\f135";
+}
+.si-APP_wy:before {
+	content: "\f136";
+}
+.si-APP_dxfw:before {
+	content: "\f137";
+}
+.si-APP_sqsy:before {
+	content: "\f138";
+}
+.si-APP_sqjz:before {
+	content: "\f139";
+}
+.si-APP_sqfw:before {
+	content: "\f13a";
+}
+.si-APP_sqxxfb:before {
+	content: "\f13b";
+}
+.si-APP_sqjz:before {
+	content: "\f13c";
+}
+.si-APP_sqjj:before {
+	content: "\f13d";
+}
+.si-APP_sqzm:before {
+	content: "\f13e";
+}
+.si-APP_系统管理2_xtgl2:before {
+	content: "\f13f";
+}
+.si-APP_xtgl:before {
+	content: "\f140";
+}
+.si-APP_xsdb:before {
+	content: "\f141";
+}
+.si-APP_tjfx:before {
+	content: "\f142";
+}
+.si-APP_zhyw:before {
+	content: "\f143";
+}
+.si-APP_zhcx:before {
+	content: "\f144";
+}
+.si-APP_wggl:before {
+	content: "\f145";
+}
+.si-APP_wgjdgl:before {
+	content: "\f146";
+}
+.si-APP_lnrga:before {
+	content: "\f147";
+}
+.si-APP_khpg:before {
+	content: "\f148";
+}
+.si-APP_jsyw:before {
+	content: "\f149";
+}
+.si-APP_认证2_rz2:before {
+	content: "\f14a";
+}
+.si-APP_rz:before {
+	content: "\f14b";
+}
+.si-APP_rzzx:before {
+	content: "\f14c";
+}
+.si-APP_zmgl:before {
+	content: "\f14d";
+}
+.si-APP_xqjm:before {
+	content: "\f14e";
+}
+.si-APP_tgyw:before {
+	content: "\f14f";
+}
+.si-APP_tybg:before {
+	content: "\f150";
+}
+.si-APP_tztg:before {
+	content: "\f151";
+}
+.si-APP_pzgl:before {
+	content: "\f152";
+}
+.si-APP_mjgl:before {
+	content: "\f153";
+}
+.si-APP_门禁管理（民警）_mjglmj:before {
+	content: "\f154";
+}
+.si-APP_wtzg:before {
+	content: "\f155";
+}
+.si-APP_fhjbm:before {
+	content: "\f156";
+}
+.si-APP_gxgl:before {
+	content: "\f157";
+}
+.si-com_addto_addto:before {
+	content: "\f158";
+}
+.si-com_android_android:before {
+	content: "\f159";
+}
+.si-com_apple_apple:before {
+	content: "\f15a";
+}
+.si-com_appsquareo_appsquareo:before {
+	content: "\f15b";
+}
+.si-com_appsquare_appsquare:before {
+	content: "\f15c";
+}
+.si-com_arrowcircleodown_arrowcircleodown:before {
+	content: "\f15d";
+}
+.si-com_arrowscircleoup_arrowscircleoup:before {
+	content: "\f15e";
+}
+.si-com_bigcircleo_bigcircleo:before {
+	content: "\f15f";
+}
+.si-com_calendar_calendar:before {
+	content: "\f160";
+}
+.si-com_catalog2_catalog2:before {
+	content: "\f161";
+}
+.si-com_chartarea_chartarea:before {
+	content: "\f162";
+}
+.si-com_chartbar_chartbar:before {
+	content: "\f163";
+}
+.si-com_chartline_chartline:before {
+	content: "\f164";
+}
+.si-com_chartpie_chartpie:before {
+	content: "\f165";
+}
+.si-com_chrome_chrome:before {
+	content: "\f166";
+}
+.si-com_circleo_circleo:before {
+	content: "\f167";
+}
+.si-com_circle_circle:before {
+	content: "\f168";
+}
+.si-com_clock_clock-07:before {
+	content: "\f169";
+}
+.si-com_clock_clock-120:before {
+	content: "\f16a";
+}
+.si-com_collection_collection:before {
+	content: "\f16b";
+}
+.si-com_copy2_copy2:before {
+	content: "\f16c";
+}
+.si-com_correct_correct-08:before {
+	content: "\f16d";
+}
+.si-com_correct_correct-73:before {
+	content: "\f16e";
+}
+.si-com_currentitem2_currentitem2:before {
+	content: "\f16f";
+}
+.si-com_currentitem_currentitem:before {
+	content: "\f170";
+}
+.si-com_damage_damage:before {
+	content: "\f171";
+}
+.si-com_delete_delete:before {
+	content: "\f172";
+}
+.si-com_display_display:before {
+	content: "\f173";
+}
+.si-com_dotcircle_dotcircle:before {
+	content: "\f174";
+}
+.si-com_doubt_doubt:before {
+	content: "\f175";
+}
+.si-com_edit_edit:before {
+	content: "\f176";
+}
+.si-com_ellipsiscircle_ellipsiscircle:before {
+	content: "\f177";
+}
+.si-com_enlarge_enlarge:before {
+	content: "\f178";
+}
+.si-com_error_error-09:before {
+	content: "\f179";
+}
+.si-com_error_error-49:before {
+	content: "\f17a";
+}
+.si-com_export_export:before {
+	content: "\f17b";
+}
+.si-com_fileo_fileo:before {
+	content: "\f17c";
+}
+.si-com_filepictureo_filepictureo:before {
+	content: "\f17d";
+}
+.si-com_filepicture_filepicture:before {
+	content: "\f17e";
+}
+.si-com_filetexto_filetexto:before {
+	content: "\f17f";
+}
+.si-com_filetext_filetext:before {
+	content: "\f180";
+}
+.si-com_file_file:before {
+	content: "\f181";
+}
+.si-com_flag_flag:before {
+	content: "\f182";
+}
+.si-com_folderopeno_folderopeno:before {
+	content: "\f183";
+}
+.si-com_folderopen_folderopen:before {
+	content: "\f184";
+}
+.si-com_foldero_foldero:before {
+	content: "\f185";
+}
+.si-com_folder_folder:before {
+	content: "\f186";
+}
+.si-com_folding_folding:before {
+	content: "\f187";
+}
+.si-com_github_github:before {
+	content: "\f188";
+}
+.si-com_gitlab_gitlab:before {
+	content: "\f189";
+}
+.si-com_heart _heart :before {
+	content: "\f18a";
+}
+.si-com_hearto_hearto:before {
+	content: "\f18b";
+}
+.si-com_help_help:before {
+	content: "\f18c";
+}
+.si-com_home:before {
+	content: "\f18d";
+}
+.si-com_homeo_homeo:before {
+	content: "\f18e";
+}
+.si-com_home_home:before {
+	content: "\f18f";
+}
+.si-com_html5:before {
+	content: "\f190";
+}
+.si-com_image_image:before {
+	content: "\f191";
+}
+.si-com_increase_increase:before {
+	content: "\f192";
+}
+.si-com_institution:before {
+	content: "\f193";
+}
+.si-com_label_label:before {
+	content: "\f194";
+}
+.si-com_leftsign_leftsign:before {
+	content: "\f195";
+}
+.si-com_left_left:before {
+	content: "\f196";
+}
+.si-com_link2_link2:before {
+	content: "\f197";
+}
+.si-com_link_link:before {
+	content: "\f198";
+}
+.si-com_listsquareo_listsquareo:before {
+	content: "\f199";
+}
+.si-com_load_load:before {
+	content: "\f19a";
+}
+.si-com_location_location:before {
+	content: "\f19b";
+}
+.si-com_lock_lock:before {
+	content: "\f19c";
+}
+.si-com_loop_loop:before {
+	content: "\f19d";
+}
+.si-com_lower_lower-20:before {
+	content: "\f19e";
+}
+.si-com_lower_lower-64:before {
+	content: "\f19f";
+}
+.si-com_magnifier_magnifier:before {
+	content: "\f1a0";
+}
+.si-com_mail_mail:before {
+	content: "\f1a1";
+}
+.si-com_maplocation2_maplocation2:before {
+	content: "\f1a2";
+}
+.si-com_maplocation_maplocation:before {
+	content: "\f1a3";
+}
+.si-com_minuscircle_minus-circle:before {
+	content: "\f1a4";
+}
+.si-com_more_more:before {
+	content: "\f1a5";
+}
+.si-com_narrow_narrow:before {
+	content: "\f1a6";
+}
+.si-com_news_news:before {
+	content: "\f1a7";
+}
+.si-com_noimageo_noimageo:before {
+	content: "\f1a8";
+}
+.si-com_notebook_notebook:before {
+	content: "\f1a9";
+}
+.si-com_notice_notice:before {
+	content: "\f1aa";
+}
+.si-com_pen_pen:before {
+	content: "\f1ab";
+}
+.si-com_personnel_personnel:before {
+	content: "\f1ac";
+}
+.si-com_photograph_photograph:before {
+	content: "\f1ad";
+}
+.si-com_plus_plus:before {
+	content: "\f1ae";
+}
+.si-com_position_position:before {
+	content: "\f1af";
+}
+.si-com_preservation_preservation:before {
+	content: "\f1b0";
+}
+.si-com_print_print:before {
+	content: "\f1b1";
+}
+.si-com_problem_problem:before {
+	content: "\f1b2";
+}
+.si-com_prompt_prompt:before {
+	content: "\f1b3";
+}
+.si-com_qq_qq:before {
+	content: "\f1b4";
+}
+.si-com_reduce_reduce:before {
+	content: "\f1b5";
+}
+.si-com_rightsign_rightsign:before {
+	content: "\f1b6";
+}
+.si-com_right_right:before {
+	content: "\f1b7";
+}
+.si-com_rocket_rocket-118:before {
+	content: "\f1b8";
+}
+.si-com_rocket_rocket-27:before {
+	content: "\f1b9";
+}
+.si-com_rotate_rotate:before {
+	content: "\f1ba";
+}
+.si-com_searchplus_searchplus:before {
+	content: "\f1bb";
+}
+.si-com_search_search:before {
+	content: "\f1bc";
+}
+.si-com_see_see:before {
+	content: "\f1bd";
+}
+.si-com_setup_setup:before {
+	content: "\f1be";
+}
+.si-com_shortmessage_shortmessage:before {
+	content: "\f1bf";
+}
+.si-com_sitemap_sitemap:before {
+	content: "\f1c0";
+}
+.si-com_smallbell_smallbell:before {
+	content: "\f1c1";
+}
+.si-com_sortleft_sortleft:before {
+	content: "\f1c2";
+}
+.si-com_sortright_sortright:before {
+	content: "\f1c3";
+}
+.si-com_star_star:before {
+	content: "\f1c4";
+}
+.si-com_suspend_suspend:before {
+	content: "\f1c5";
+}
+.si-com_task_task:before {
+	content: "\f1c6";
+}
+.si-com_text_text:before {
+	content: "\f1c7";
+}
+.si-com_upanddown_upanddown:before {
+	content: "\f1c8";
+}
+.si-com_upper_upper:before {
+	content: "\f1c9";
+}
+.si-com_up_up:before {
+	content: "\f1ca";
+}
+.si-com_usero_usero:before {
+	content: "\f1cb";
+}
+.si-com_user_user:before {
+	content: "\f1cc";
+}
+.si-com_wechat_wechat:before {
+	content: "\f1cd";
+}
+.si-com_weibo_weibo:before {
+	content: "\f1ce";
+}
+.si-com_zoomin_zoomin:before {
+	content: "\f1cf";
+}
+.si-com_zoomout_zoomout:before {
+	content: "\f1d0";
+}
+
+	</style>
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="top">
+		<h1>Shareui 字体图标列表</h1>
+		<div class="text-center">
+			<input type="text" class="search form-control" placeholder="输入类名/中文名称/codepoint查找"/>
+		</div>
+	</div>
+	<div id="content">
+	<h2>APP_专题业务_ztyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_ztyw"></i>
+				</td>
+				<td>si si-APP_ztyw</td>
+				<td>专题业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f101" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_业务导航_ywdh</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_ywdh"></i>
+				</td>
+				<td>si si-APP_ywdh</td>
+				<td>业务导航</td>
+				<td>
+					<input class="codepoint" type="text" value="\f102" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_业委会_ywh</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_ywh"></i>
+				</td>
+				<td>si si-APP_ywh</td>
+				<td>业委会</td>
+				<td>
+					<input class="codepoint" type="text" value="\f103" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_两违汇总表_lwhzb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_lwhzb"></i>
+				</td>
+				<td>si si-APP_lwhzb</td>
+				<td>两违汇总表</td>
+				<td>
+					<input class="codepoint" type="text" value="\f104" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_两违网格统计表_lwwgtjb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_lwwgtjb"></i>
+				</td>
+				<td>si si-APP_lwwgtjb</td>
+				<td>两违网格统计表</td>
+				<td>
+					<input class="codepoint" type="text" value="\f105" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_两违考核表_lwkhb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_lwkhb"></i>
+				</td>
+				<td>si si-APP_lwkhb</td>
+				<td>两违考核表</td>
+				<td>
+					<input class="codepoint" type="text" value="\f106" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_个人中心_grzx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_grzx"></i>
+				</td>
+				<td>si si-APP_grzx</td>
+				<td>个人中心</td>
+				<td>
+					<input class="codepoint" type="text" value="\f107" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_事件处理_sjcl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sjcl-09"></i>
+				</td>
+				<td>si si-APP_sjcl-09</td>
+				<td>事件处理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f108" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-APP_sjcl-34"></i>
+				</td>
+				<td>si si-APP_sjcl-34</td>
+				<td>事件处理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f109" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_事件预警_sjyj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sjyj"></i>
+				</td>
+				<td>si si-APP_sjyj</td>
+				<td>事件预警</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_互动共治_hdgz</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_hdgz"></i>
+				</td>
+				<td>si si-APP_hdgz</td>
+				<td>互动共治</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_人社业务_rsyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_rsyw"></i>
+				</td>
+				<td>si si-APP_rsyw</td>
+				<td>人社业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_任务中心_rwzx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_rwzx"></i>
+				</td>
+				<td>si si-APP_rwzx</td>
+				<td>任务中心</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_企业管理_qygl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_qygl"></i>
+				</td>
+				<td>si si-APP_qygl</td>
+				<td>企业管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_侨情信息管理_qqxxgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_qqxxgl"></i>
+				</td>
+				<td>si si-APP_qqxxgl</td>
+				<td>侨情信息管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f10f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_信息发布_xxfb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xxfb"></i>
+				</td>
+				<td>si si-APP_xxfb</td>
+				<td>信息发布</td>
+				<td>
+					<input class="codepoint" type="text" value="\f110" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_党员_dy</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_dy"></i>
+				</td>
+				<td>si si-APP_dy</td>
+				<td>党员</td>
+				<td>
+					<input class="codepoint" type="text" value="\f111" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_党建业务_djyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_djyw"></i>
+				</td>
+				<td>si si-APP_djyw</td>
+				<td>党建业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f112" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_公共安全_ggaq</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_ggaq"></i>
+				</td>
+				<td>si si-APP_ggaq</td>
+				<td>公共安全</td>
+				<td>
+					<input class="codepoint" type="text" value="\f113" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_公安业务_gayw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_gayw"></i>
+				</td>
+				<td>si si-APP_gayw</td>
+				<td>公安业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f114" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_决策分析_jcfx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jcfx"></i>
+				</td>
+				<td>si si-APP_jcfx</td>
+				<td>决策分析</td>
+				<td>
+					<input class="codepoint" type="text" value="\f115" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_办公OA_bgoa</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_办公OA_bgoa"></i>
+				</td>
+				<td>si si-APP_办公OA_bgoa</td>
+				<td>办公</td>
+				<td>
+					<input class="codepoint" type="text" value="\f116" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_城市部件_csbj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_csbj"></i>
+				</td>
+				<td>si si-APP_csbj</td>
+				<td>城市部件</td>
+				<td>
+					<input class="codepoint" type="text" value="\f117" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_基础数据_jcsj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jcsj"></i>
+				</td>
+				<td>si si-APP_jcsj</td>
+				<td>基础数据</td>
+				<td>
+					<input class="codepoint" type="text" value="\f118" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_基础数据考核_jcsjkh</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jcsjkh"></i>
+				</td>
+				<td>si si-APP_jcsjkh</td>
+				<td>基础数据考核</td>
+				<td>
+					<input class="codepoint" type="text" value="\f119" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_基础数据采集_jcsjcj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jcsjcj"></i>
+				</td>
+				<td>si si-APP_jcsjcj</td>
+				<td>基础数据采集</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_学思践悟_xsjw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xsjw"></i>
+				</td>
+				<td>si si-APP_xsjw</td>
+				<td>学思践悟</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_小区店面_xqdm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xqdm"></i>
+				</td>
+				<td>si si-APP_xqdm</td>
+				<td>小区店面</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_小区服务室_xqfws</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xqfws"></i>
+				</td>
+				<td>si si-APP_xqfws</td>
+				<td>小区服务室</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_就业管理_jygl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jygl"></i>
+				</td>
+				<td>si si-APP_jygl</td>
+				<td>就业管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_就业补助_jybz</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jybz"></i>
+				</td>
+				<td>si si-APP_jybz</td>
+				<td>就业补助</td>
+				<td>
+					<input class="codepoint" type="text" value="\f11f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_巡视联络_xsll</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xsll"></i>
+				</td>
+				<td>si si-APP_xsll</td>
+				<td>巡视联络</td>
+				<td>
+					<input class="codepoint" type="text" value="\f120" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_工作人员管理_gzrygl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_gzrygl"></i>
+				</td>
+				<td>si si-APP_gzrygl</td>
+				<td>工作人员管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f121" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_工作动态_gzdt</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_gzdt"></i>
+				</td>
+				<td>si si-APP_gzdt</td>
+				<td>工作动态</td>
+				<td>
+					<input class="codepoint" type="text" value="\f122" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_市人社数据中心_srssjzx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_srssjzx"></i>
+				</td>
+				<td>si si-APP_srssjzx</td>
+				<td>市人社数据中心</td>
+				<td>
+					<input class="codepoint" type="text" value="\f123" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_市民论坛_smlt</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_smlt"></i>
+				</td>
+				<td>si si-APP_smlt</td>
+				<td>市民论坛</td>
+				<td>
+					<input class="codepoint" type="text" value="\f124" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_成果运用_cgyy</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_cgyy"></i>
+				</td>
+				<td>si si-APP_cgyy</td>
+				<td>成果运用</td>
+				<td>
+					<input class="codepoint" type="text" value="\f125" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_我的工作台_wdgzt</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wdgzt"></i>
+				</td>
+				<td>si si-APP_wdgzt</td>
+				<td>我的工作台</td>
+				<td>
+					<input class="codepoint" type="text" value="\f126" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_户籍报名_hjbm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_hjbm"></i>
+				</td>
+				<td>si si-APP_hjbm</td>
+				<td>户籍报名</td>
+				<td>
+					<input class="codepoint" type="text" value="\f127" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_所属社区_sssq</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sssq"></i>
+				</td>
+				<td>si si-APP_sssq</td>
+				<td>所属社区</td>
+				<td>
+					<input class="codepoint" type="text" value="\f128" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_指挥调度_zhdd</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_zhdd"></i>
+				</td>
+				<td>si si-APP_zhdd</td>
+				<td>指挥调度</td>
+				<td>
+					<input class="codepoint" type="text" value="\f129" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_教育业务_jyyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jyyw"></i>
+				</td>
+				<td>si si-APP_jyyw</td>
+				<td>教育业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_数字城管_szcg</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_szcg"></i>
+				</td>
+				<td>si si-APP_szcg</td>
+				<td>数字城管</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_文本规范_wbgf</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wbgf"></i>
+				</td>
+				<td>si si-APP_wbgf</td>
+				<td>文本规范</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_日志统计_rztj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_rztj-51"></i>
+				</td>
+				<td>si si-APP_rztj-51</td>
+				<td>日志统计</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-APP_rztj-64"></i>
+				</td>
+				<td>si si-APP_rztj-64</td>
+				<td>日志统计</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_核实走访_hszf</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_hszf"></i>
+				</td>
+				<td>si si-APP_hszf</td>
+				<td>核实走访</td>
+				<td>
+					<input class="codepoint" type="text" value="\f12f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_楼栋_ld</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_ld"></i>
+				</td>
+				<td>si si-APP_ld</td>
+				<td>楼栋</td>
+				<td>
+					<input class="codepoint" type="text" value="\f130" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_残疾业务_cjyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_cjyw"></i>
+				</td>
+				<td>si si-APP_cjyw</td>
+				<td>残疾业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f131" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_民政业务_mzyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_mzyw"></i>
+				</td>
+				<td>si si-APP_mzyw</td>
+				<td>民政业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f132" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_民生集美_msjm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_msjm"></i>
+				</td>
+				<td>si si-APP_msjm</td>
+				<td>民生集美</td>
+				<td>
+					<input class="codepoint" type="text" value="\f133" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_法规制度_fgzd</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_fgzd"></i>
+				</td>
+				<td>si si-APP_fgzd</td>
+				<td>法规制度</td>
+				<td>
+					<input class="codepoint" type="text" value="\f134" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_消防业务_xfyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xfyw"></i>
+				</td>
+				<td>si si-APP_xfyw</td>
+				<td>消防业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f135" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_物业_wy</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wy"></i>
+				</td>
+				<td>si si-APP_wy</td>
+				<td>物业</td>
+				<td>
+					<input class="codepoint" type="text" value="\f136" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_短信服务_dxfw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_dxfw"></i>
+				</td>
+				<td>si si-APP_dxfw</td>
+				<td>短信服务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f137" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区书院_sqsy</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqsy"></i>
+				</td>
+				<td>si si-APP_sqsy</td>
+				<td>社区书院</td>
+				<td>
+					<input class="codepoint" type="text" value="\f138" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区救助_sqjz</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqjz"></i>
+				</td>
+				<td>si si-APP_sqjz</td>
+				<td>社区救助</td>
+				<td>
+					<input class="codepoint" type="text" value="\f139" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区服务_sqfw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqfw"></i>
+				</td>
+				<td>si si-APP_sqfw</td>
+				<td>社区服务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区消息发布_sqxxfb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqxxfb"></i>
+				</td>
+				<td>si si-APP_sqxxfb</td>
+				<td>社区消息发布</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区矫正_sqjz</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqjz"></i>
+				</td>
+				<td>si si-APP_sqjz</td>
+				<td>社区矫正</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区简介_sqjj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqjj"></i>
+				</td>
+				<td>si si-APP_sqjj</td>
+				<td>社区简介</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_社区证明_sqzm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_sqzm"></i>
+				</td>
+				<td>si si-APP_sqzm</td>
+				<td>社区证明</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_系统管理2_xtgl2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_系统管理2_xtgl2"></i>
+				</td>
+				<td>si si-APP_系统管理2_xtgl2</td>
+				<td>系统管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f13f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_系统管理_xtgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xtgl"></i>
+				</td>
+				<td>si si-APP_xtgl</td>
+				<td>系统管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f140" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_线索督办_xsdb</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xsdb"></i>
+				</td>
+				<td>si si-APP_xsdb</td>
+				<td>线索督办</td>
+				<td>
+					<input class="codepoint" type="text" value="\f141" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_统计分析_tjfx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_tjfx"></i>
+				</td>
+				<td>si si-APP_tjfx</td>
+				<td>统计分析</td>
+				<td>
+					<input class="codepoint" type="text" value="\f142" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_综合业务_zhyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_zhyw"></i>
+				</td>
+				<td>si si-APP_zhyw</td>
+				<td>综合业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f143" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_综合查询_zhcx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_zhcx"></i>
+				</td>
+				<td>si si-APP_zhcx</td>
+				<td>综合查询</td>
+				<td>
+					<input class="codepoint" type="text" value="\f144" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_网格管理_wggl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wggl"></i>
+				</td>
+				<td>si si-APP_wggl</td>
+				<td>网格管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f145" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_网格进度管理_wgjdgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wgjdgl"></i>
+				</td>
+				<td>si si-APP_wgjdgl</td>
+				<td>网格进度管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f146" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_老年人关爱_lnrga</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_lnrga"></i>
+				</td>
+				<td>si si-APP_lnrga</td>
+				<td>老年人关爱</td>
+				<td>
+					<input class="codepoint" type="text" value="\f147" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_考核评估_khpg</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_khpg"></i>
+				</td>
+				<td>si si-APP_khpg</td>
+				<td>考核评估</td>
+				<td>
+					<input class="codepoint" type="text" value="\f148" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_计生业务_jsyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_jsyw"></i>
+				</td>
+				<td>si si-APP_jsyw</td>
+				<td>计生业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f149" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_认证2_rz2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_认证2_rz2"></i>
+				</td>
+				<td>si si-APP_认证2_rz2</td>
+				<td>认证</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_认证_rz</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_rz"></i>
+				</td>
+				<td>si si-APP_rz</td>
+				<td>认证</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_认证中心_rzzx</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_rzzx"></i>
+				</td>
+				<td>si si-APP_rzzx</td>
+				<td>认证中心</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_证明管理_zmgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_zmgl"></i>
+				</td>
+				<td>si si-APP_zmgl</td>
+				<td>证明管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_辖区居民_xqjm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_xqjm"></i>
+				</td>
+				<td>si si-APP_xqjm</td>
+				<td>辖区居民</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_退管业务_tgyw</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_tgyw"></i>
+				</td>
+				<td>si si-APP_tgyw</td>
+				<td>退管业务</td>
+				<td>
+					<input class="codepoint" type="text" value="\f14f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_通用办公_tybg</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_tybg"></i>
+				</td>
+				<td>si si-APP_tybg</td>
+				<td>通用办公</td>
+				<td>
+					<input class="codepoint" type="text" value="\f150" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_通知通告_tztg</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_tztg"></i>
+				</td>
+				<td>si si-APP_tztg</td>
+				<td>通知通告</td>
+				<td>
+					<input class="codepoint" type="text" value="\f151" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_配置管理_pzgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_pzgl"></i>
+				</td>
+				<td>si si-APP_pzgl</td>
+				<td>配置管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f152" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_门禁管理_mjgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_mjgl"></i>
+				</td>
+				<td>si si-APP_mjgl</td>
+				<td>门禁管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f153" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_门禁管理（民警）_mjglmj</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_门禁管理（民警）_mjglmj"></i>
+				</td>
+				<td>si si-APP_门禁管理（民警）_mjglmj</td>
+				<td>门禁管理民警</td>
+				<td>
+					<input class="codepoint" type="text" value="\f154" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_问题整改_wtzg</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_wtzg"></i>
+				</td>
+				<td>si si-APP_wtzg</td>
+				<td>问题整改</td>
+				<td>
+					<input class="codepoint" type="text" value="\f155" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_非户籍报名_fhjbm</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_fhjbm"></i>
+				</td>
+				<td>si si-APP_fhjbm</td>
+				<td>非户籍报名</td>
+				<td>
+					<input class="codepoint" type="text" value="\f156" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>APP_高校管理_gxgl</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-APP_gxgl"></i>
+				</td>
+				<td>si si-APP_gxgl</td>
+				<td>高校管理</td>
+				<td>
+					<input class="codepoint" type="text" value="\f157" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_addto_addto</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_addto_addto"></i>
+				</td>
+				<td>si si-com_addto_addto</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f158" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_android_android</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_android_android"></i>
+				</td>
+				<td>si si-com_android_android</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f159" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_apple_apple</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_apple_apple"></i>
+				</td>
+				<td>si si-com_apple_apple</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_appsquareo_appsquareo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_appsquareo_appsquareo"></i>
+				</td>
+				<td>si si-com_appsquareo_appsquareo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_appsquare_appsquare</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_appsquare_appsquare"></i>
+				</td>
+				<td>si si-com_appsquare_appsquare</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_arrowcircleodown_arrowcircleodown</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_arrowcircleodown_arrowcircleodown"></i>
+				</td>
+				<td>si si-com_arrowcircleodown_arrowcircleodown</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_arrowscircleoup_arrowscircleoup</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_arrowscircleoup_arrowscircleoup"></i>
+				</td>
+				<td>si si-com_arrowscircleoup_arrowscircleoup</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_bigcircleo_bigcircleo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_bigcircleo_bigcircleo"></i>
+				</td>
+				<td>si si-com_bigcircleo_bigcircleo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f15f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_calendar_calendar</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_calendar_calendar"></i>
+				</td>
+				<td>si si-com_calendar_calendar</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f160" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_catalog2_catalog2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_catalog2_catalog2"></i>
+				</td>
+				<td>si si-com_catalog2_catalog2</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f161" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_chartarea_chartarea</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_chartarea_chartarea"></i>
+				</td>
+				<td>si si-com_chartarea_chartarea</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f162" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_chartbar_chartbar</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_chartbar_chartbar"></i>
+				</td>
+				<td>si si-com_chartbar_chartbar</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f163" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_chartline_chartline</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_chartline_chartline"></i>
+				</td>
+				<td>si si-com_chartline_chartline</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f164" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_chartpie_chartpie</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_chartpie_chartpie"></i>
+				</td>
+				<td>si si-com_chartpie_chartpie</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f165" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_chrome_chrome</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_chrome_chrome"></i>
+				</td>
+				<td>si si-com_chrome_chrome</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f166" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_circleo_circleo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_circleo_circleo"></i>
+				</td>
+				<td>si si-com_circleo_circleo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f167" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_circle_circle</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_circle_circle"></i>
+				</td>
+				<td>si si-com_circle_circle</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f168" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_clock_clock</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_clock_clock-07"></i>
+				</td>
+				<td>si si-com_clock_clock-07</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f169" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_clock_clock-120"></i>
+				</td>
+				<td>si si-com_clock_clock-120</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_collection_collection</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_collection_collection"></i>
+				</td>
+				<td>si si-com_collection_collection</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_copy2_copy2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_copy2_copy2"></i>
+				</td>
+				<td>si si-com_copy2_copy2</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_correct_correct</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_correct_correct-08"></i>
+				</td>
+				<td>si si-com_correct_correct-08</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_correct_correct-73"></i>
+				</td>
+				<td>si si-com_correct_correct-73</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_currentitem2_currentitem2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_currentitem2_currentitem2"></i>
+				</td>
+				<td>si si-com_currentitem2_currentitem2</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f16f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_currentitem_currentitem</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_currentitem_currentitem"></i>
+				</td>
+				<td>si si-com_currentitem_currentitem</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f170" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_damage_damage</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_damage_damage"></i>
+				</td>
+				<td>si si-com_damage_damage</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f171" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_delete_delete</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_delete_delete"></i>
+				</td>
+				<td>si si-com_delete_delete</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f172" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_display_display</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_display_display"></i>
+				</td>
+				<td>si si-com_display_display</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f173" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_dotcircle_dotcircle</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_dotcircle_dotcircle"></i>
+				</td>
+				<td>si si-com_dotcircle_dotcircle</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f174" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_doubt_doubt</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_doubt_doubt"></i>
+				</td>
+				<td>si si-com_doubt_doubt</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f175" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_edit_edit</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_edit_edit"></i>
+				</td>
+				<td>si si-com_edit_edit</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f176" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_ellipsiscircle_ellipsiscircle</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_ellipsiscircle_ellipsiscircle"></i>
+				</td>
+				<td>si si-com_ellipsiscircle_ellipsiscircle</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f177" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_enlarge_enlarge</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_enlarge_enlarge"></i>
+				</td>
+				<td>si si-com_enlarge_enlarge</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f178" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_error_error</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_error_error-09"></i>
+				</td>
+				<td>si si-com_error_error-09</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f179" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_error_error-49"></i>
+				</td>
+				<td>si si-com_error_error-49</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_export_export</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_export_export"></i>
+				</td>
+				<td>si si-com_export_export</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_fileo_fileo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_fileo_fileo"></i>
+				</td>
+				<td>si si-com_fileo_fileo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_filepictureo_filepictureo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_filepictureo_filepictureo"></i>
+				</td>
+				<td>si si-com_filepictureo_filepictureo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_filepicture_filepicture</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_filepicture_filepicture"></i>
+				</td>
+				<td>si si-com_filepicture_filepicture</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_filetexto_filetexto</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_filetexto_filetexto"></i>
+				</td>
+				<td>si si-com_filetexto_filetexto</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f17f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_filetext_filetext</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_filetext_filetext"></i>
+				</td>
+				<td>si si-com_filetext_filetext</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f180" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_file_file</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_file_file"></i>
+				</td>
+				<td>si si-com_file_file</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f181" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_flag_flag</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_flag_flag"></i>
+				</td>
+				<td>si si-com_flag_flag</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f182" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_folderopeno_folderopeno</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_folderopeno_folderopeno"></i>
+				</td>
+				<td>si si-com_folderopeno_folderopeno</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f183" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_folderopen_folderopen</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_folderopen_folderopen"></i>
+				</td>
+				<td>si si-com_folderopen_folderopen</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f184" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_foldero_foldero</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_foldero_foldero"></i>
+				</td>
+				<td>si si-com_foldero_foldero</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f185" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_folder_folder</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_folder_folder"></i>
+				</td>
+				<td>si si-com_folder_folder</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f186" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_folding_folding</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_folding_folding"></i>
+				</td>
+				<td>si si-com_folding_folding</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f187" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_github_github</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_github_github"></i>
+				</td>
+				<td>si si-com_github_github</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f188" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_gitlab_gitlab</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_gitlab_gitlab"></i>
+				</td>
+				<td>si si-com_gitlab_gitlab</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f189" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_heart _heart </h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_heart _heart "></i>
+				</td>
+				<td>si si-com_heart _heart </td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_hearto_hearto</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_hearto_hearto"></i>
+				</td>
+				<td>si si-com_hearto_hearto</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_help_help</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_help_help"></i>
+				</td>
+				<td>si si-com_help_help</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_home</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_home"></i>
+				</td>
+				<td>si si-com_home</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_homeo_homeo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_homeo_homeo"></i>
+				</td>
+				<td>si si-com_homeo_homeo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_home_home</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_home_home"></i>
+				</td>
+				<td>si si-com_home_home</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f18f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_html5</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_html5"></i>
+				</td>
+				<td>si si-com_html5</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f190" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_image_image</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_image_image"></i>
+				</td>
+				<td>si si-com_image_image</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f191" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_increase_increase</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_increase_increase"></i>
+				</td>
+				<td>si si-com_increase_increase</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f192" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_institution</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_institution"></i>
+				</td>
+				<td>si si-com_institution</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f193" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_label_label</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_label_label"></i>
+				</td>
+				<td>si si-com_label_label</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f194" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_leftsign_leftsign</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_leftsign_leftsign"></i>
+				</td>
+				<td>si si-com_leftsign_leftsign</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f195" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_left_left</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_left_left"></i>
+				</td>
+				<td>si si-com_left_left</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f196" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_link2_link2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_link2_link2"></i>
+				</td>
+				<td>si si-com_link2_link2</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f197" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_link_link</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_link_link"></i>
+				</td>
+				<td>si si-com_link_link</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f198" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_listsquareo_listsquareo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_listsquareo_listsquareo"></i>
+				</td>
+				<td>si si-com_listsquareo_listsquareo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f199" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_load_load</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_load_load"></i>
+				</td>
+				<td>si si-com_load_load</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19a" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_location_location</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_location_location"></i>
+				</td>
+				<td>si si-com_location_location</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19b" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_lock_lock</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_lock_lock"></i>
+				</td>
+				<td>si si-com_lock_lock</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19c" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_loop_loop</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_loop_loop"></i>
+				</td>
+				<td>si si-com_loop_loop</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19d" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_lower_lower</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_lower_lower-20"></i>
+				</td>
+				<td>si si-com_lower_lower-20</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19e" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_lower_lower-64"></i>
+				</td>
+				<td>si si-com_lower_lower-64</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f19f" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_magnifier_magnifier</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_magnifier_magnifier"></i>
+				</td>
+				<td>si si-com_magnifier_magnifier</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a0" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_mail_mail</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_mail_mail"></i>
+				</td>
+				<td>si si-com_mail_mail</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a1" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_maplocation2_maplocation2</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_maplocation2_maplocation2"></i>
+				</td>
+				<td>si si-com_maplocation2_maplocation2</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a2" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_maplocation_maplocation</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_maplocation_maplocation"></i>
+				</td>
+				<td>si si-com_maplocation_maplocation</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a3" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_minuscircle_minus</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_minuscircle_minus-circle"></i>
+				</td>
+				<td>si si-com_minuscircle_minus-circle</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a4" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_more_more</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_more_more"></i>
+				</td>
+				<td>si si-com_more_more</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a5" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_narrow_narrow</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_narrow_narrow"></i>
+				</td>
+				<td>si si-com_narrow_narrow</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a6" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_news_news</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_news_news"></i>
+				</td>
+				<td>si si-com_news_news</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a7" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_noimageo_noimageo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_noimageo_noimageo"></i>
+				</td>
+				<td>si si-com_noimageo_noimageo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a8" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_notebook_notebook</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_notebook_notebook"></i>
+				</td>
+				<td>si si-com_notebook_notebook</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1a9" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_notice_notice</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_notice_notice"></i>
+				</td>
+				<td>si si-com_notice_notice</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1aa" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_pen_pen</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_pen_pen"></i>
+				</td>
+				<td>si si-com_pen_pen</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ab" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_personnel_personnel</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_personnel_personnel"></i>
+				</td>
+				<td>si si-com_personnel_personnel</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ac" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_photograph_photograph</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_photograph_photograph"></i>
+				</td>
+				<td>si si-com_photograph_photograph</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ad" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_plus_plus</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_plus_plus"></i>
+				</td>
+				<td>si si-com_plus_plus</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ae" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_position_position</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_position_position"></i>
+				</td>
+				<td>si si-com_position_position</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1af" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_preservation_preservation</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_preservation_preservation"></i>
+				</td>
+				<td>si si-com_preservation_preservation</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b0" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_print_print</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_print_print"></i>
+				</td>
+				<td>si si-com_print_print</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b1" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_problem_problem</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_problem_problem"></i>
+				</td>
+				<td>si si-com_problem_problem</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b2" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_prompt_prompt</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_prompt_prompt"></i>
+				</td>
+				<td>si si-com_prompt_prompt</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b3" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_qq_qq</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_qq_qq"></i>
+				</td>
+				<td>si si-com_qq_qq</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b4" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_reduce_reduce</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_reduce_reduce"></i>
+				</td>
+				<td>si si-com_reduce_reduce</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b5" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_rightsign_rightsign</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_rightsign_rightsign"></i>
+				</td>
+				<td>si si-com_rightsign_rightsign</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b6" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_right_right</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_right_right"></i>
+				</td>
+				<td>si si-com_right_right</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b7" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_rocket_rocket</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_rocket_rocket-118"></i>
+				</td>
+				<td>si si-com_rocket_rocket-118</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b8" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="si si-com_rocket_rocket-27"></i>
+				</td>
+				<td>si si-com_rocket_rocket-27</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1b9" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_rotate_rotate</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_rotate_rotate"></i>
+				</td>
+				<td>si si-com_rotate_rotate</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ba" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_searchplus_searchplus</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_searchplus_searchplus"></i>
+				</td>
+				<td>si si-com_searchplus_searchplus</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1bb" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_search_search</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_search_search"></i>
+				</td>
+				<td>si si-com_search_search</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1bc" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_see_see</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_see_see"></i>
+				</td>
+				<td>si si-com_see_see</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1bd" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_setup_setup</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_setup_setup"></i>
+				</td>
+				<td>si si-com_setup_setup</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1be" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_shortmessage_shortmessage</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_shortmessage_shortmessage"></i>
+				</td>
+				<td>si si-com_shortmessage_shortmessage</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1bf" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_sitemap_sitemap</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_sitemap_sitemap"></i>
+				</td>
+				<td>si si-com_sitemap_sitemap</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c0" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_smallbell_smallbell</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_smallbell_smallbell"></i>
+				</td>
+				<td>si si-com_smallbell_smallbell</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c1" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_sortleft_sortleft</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_sortleft_sortleft"></i>
+				</td>
+				<td>si si-com_sortleft_sortleft</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c2" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_sortright_sortright</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_sortright_sortright"></i>
+				</td>
+				<td>si si-com_sortright_sortright</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c3" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_star_star</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_star_star"></i>
+				</td>
+				<td>si si-com_star_star</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c4" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_suspend_suspend</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_suspend_suspend"></i>
+				</td>
+				<td>si si-com_suspend_suspend</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c5" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_task_task</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_task_task"></i>
+				</td>
+				<td>si si-com_task_task</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c6" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_text_text</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_text_text"></i>
+				</td>
+				<td>si si-com_text_text</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c7" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_upanddown_upanddown</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_upanddown_upanddown"></i>
+				</td>
+				<td>si si-com_upanddown_upanddown</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c8" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_upper_upper</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_upper_upper"></i>
+				</td>
+				<td>si si-com_upper_upper</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1c9" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_up_up</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_up_up"></i>
+				</td>
+				<td>si si-com_up_up</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ca" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_usero_usero</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_usero_usero"></i>
+				</td>
+				<td>si si-com_usero_usero</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1cb" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_user_user</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_user_user"></i>
+				</td>
+				<td>si si-com_user_user</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1cc" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_wechat_wechat</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_wechat_wechat"></i>
+				</td>
+				<td>si si-com_wechat_wechat</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1cd" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_weibo_weibo</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_weibo_weibo"></i>
+				</td>
+				<td>si si-com_weibo_weibo</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1ce" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_zoomin_zoomin</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_zoomin_zoomin"></i>
+				</td>
+				<td>si si-com_zoomin_zoomin</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1cf" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>com_zoomout_zoomout</h1>
+	<table class="table table-hover table-bordered  table-sm table-striped">
+		<thead>
+			<tr>
+				<th scope="col">图标</th>
+				<th scope="col">类名</th>
+				<th scope="col">中文名称</th>
+				<th scope="col">codepoint</th>
+				<th scope="col">复制codepoint</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<i class="si si-com_zoomout_zoomout"></i>
+				</td>
+				<td>si si-com_zoomout_zoomout</td>
+				<td></td>
+				<td>
+					<input class="codepoint" type="text" value="\f1d0" readonly/>
+				</td>
+				<td>
+					<a href="javascript:;" class="copy">复制</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<div class="alert alert-success" role="alert">
+		复制成功！
+	</div>
+
+	<script>
+		$(function () {
+			$('.copy').on('click', function (e) {
+				e.preventDefault();
+				var $codepoint = $(this).parent().prev().children();
+				$codepoint.select();
+				document.execCommand('copy', true);
+				$('.alert').show();
+				setTimeout(function () {
+					$('.alert').hide();
+				}, 2000);
+			});
+
+			$('.search').on('input porpertychange', function(e){
+				var value = $(this).val();
+				$('tr').each(function () {
+					if ($(this).find('td').length > 0) {
+						var math = false;
+						$(this).find('td').each(function () {
+							if ($(this).html().indexOf(value) !== -1) {
+								math = true;
+								return false;
+							}
+						});
+
+						if (math) {
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+					}
+				});
+			});
+		})
+	</script>
+</body>
+
+</html>

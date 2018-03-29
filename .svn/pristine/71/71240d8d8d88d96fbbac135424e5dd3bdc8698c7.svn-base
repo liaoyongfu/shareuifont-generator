@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#F29600;stroke-width:0.25;stroke-miterlimit:10;}
+	.st3{display:inline;fill:none;stroke:#F29600;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="图层_1" class="st0">
+	<g id="XMLID_65_" class="st1">
+		<rect id="XMLID_72_" class="st2" width="512" height="512"/>
+		<line id="XMLID_71_" class="st2" x1="0" y1="384" x2="512" y2="384"/>
+		<line id="XMLID_70_" class="st2" x1="0" y1="256" x2="512" y2="256"/>
+		<line id="XMLID_69_" class="st2" x1="0" y1="128" x2="512" y2="128"/>
+		<line id="XMLID_68_" class="st2" x1="384" y1="0" x2="384" y2="512"/>
+		<line id="XMLID_67_" class="st2" x1="256" y1="0" x2="256" y2="512"/>
+		<line id="XMLID_66_" class="st2" x1="128" y1="0" x2="128" y2="512"/>
+	</g>
+	<ellipse id="XMLID_64_" class="st3" cx="256" cy="256" rx="256" ry="256"/>
+</g>
+<g id="图层_2">
+	<g>
+		<path d="M256,506C118,506,6,394,6,256S118,6,256,6s250,112,250,250S394,506,256,506z M373.8,314.9L314.9,256l58.9-58.9
+			c3.9-3.9,6.2-9.1,6.2-14.6c0-5.5-2.3-11.1-6.2-15l-29.3-29.3c-3.9-3.9-9.4-6.2-15-6.2c-5.5,0-10.7,2.3-14.6,6.2L256,197.1
+			l-58.9-58.9c-3.9-3.9-9.1-6.2-14.6-6.2c-5.5,0-11.1,2.3-15,6.2l-29.3,29.3c-3.9,3.9-6.2,9.4-6.2,15c0,5.5,2.3,10.7,6.2,14.6
+			l58.9,58.9l-58.9,58.9c-3.9,3.9-6.2,9.1-6.2,14.6s2.3,11.1,6.2,15l29.3,29.3c3.9,3.9,9.4,6.2,15,6.2c5.5,0,10.7-2.3,14.6-6.2
+			l58.9-58.9l58.9,58.9c3.9,3.9,9.1,6.2,14.6,6.2c5.5,0,11.1-2.3,15-6.2l29.3-29.3c3.9-3.9,6.2-9.4,6.2-15S377.7,318.8,373.8,314.9z
+			"/>
+	</g>
+</g>
+</svg>
