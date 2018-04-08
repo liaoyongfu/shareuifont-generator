@@ -12,7 +12,7 @@ echo 生成成功，请填写提交日志：
 read log
 git add -A
 git commit -m $log
-git push origin master
+git push origin master -f
 git tag -a $PACKAGE_VERSION -m $log
 git push --tags
 # npm publish
