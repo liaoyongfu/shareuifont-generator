@@ -6,14 +6,16 @@ PACKAGE_VERSION=$(cat package.json \
   | awk -F: '{ print $2 }' \
   | sed 's/[",]//g')
 
-echo 请填写提交日志：
+echo 正在生成字体图标，请稍后...
+npm run build
+echo 生成成功，请填写提交日志：
 read log
 git add -A
 git commit -m $log
 git push origin master
 git tag -a $PACKAGE_VERSION -m $log
 git push --tags
-echo Press Enter...
+echo 按任意键退出...
 read
 #echo "Done"
 #sleep 6
