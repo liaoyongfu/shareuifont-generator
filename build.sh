@@ -15,7 +15,8 @@ git commit -m $log
 git push origin master
 git tag -a $PACKAGE_VERSION -m $log
 git push --tags
-echo 按任意键退出...
+npm publish
+echo 发布成功！按任意键退出...
 read
 #echo "Done"
 #sleep 6
